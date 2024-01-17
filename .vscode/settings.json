@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin/Release/net7.0/publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/2da0120a-66f2-40c3-8903-899554eea05d/resourceGroups/NSR-RG/providers/Microsoft.Web/sites/nsr-boats-api"
+}
