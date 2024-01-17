@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "News",
+        "url": "news-categories",
+        "imageUrl": "icon-news.png",
+        "active":"true"
+    },
+    {
+        "id": 2,
+        "name": "Promotions",
+        "url": "promotions-categories",
+        "imageUrl": "icon-discount.png",
+        "active":"true"
+    },
+    {
+        "id": 3,
+        "name": "Contact Us",
+        "url": "contact-us",
+        "imageUrl": "icon-contact-us.png",
+        "active":"true"
+    },
+    {
+        "id": 4,
+        "name": "About Us",
+        "url": "about-us",
+        "imageUrl": "icon-about-us.png",
+        "active":"true"
+    }
+]

@@ -1,0 +1,28 @@
+[
+    {
+      "id":1,
+      "quotationNumber": "Q1001",
+      "date": "2023-11-28",
+      "customerName": "John",
+      "customerAddress": "12/1moratuwa",
+      "customerEmailAddress": "john@xyz.com",
+      "customerContactNo": 12312312,
+      "note": "remarks",
+      "productName": "SpeedBoats",
+      "productDescription":"A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "active":"true"
+    },
+    {
+      "id":2,
+      "quotationNumber": "Q1002",
+      "date": "2023-11-21",
+      "customerName": "Alex",
+      "customerAddress": "12/1moratuwa",
+      "customerEmailAddress": "john@xyz.com",
+      "customerContactNo": 12312312,
+      "note": "remarks",
+      "productName": "SpeedBoats",
+      "productDescription":"A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "active":"true"
+    }
+  ]

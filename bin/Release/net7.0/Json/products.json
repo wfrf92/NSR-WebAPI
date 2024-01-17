@@ -1,0 +1,287 @@
+[
+    {
+        "Id": 1,
+        "ProductId": 0,
+        "Name": "Joy1.2 Electric Outboard Motor",
+        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+        "Subdescription": "Digital LCD display :  Provide real-time information on the operating status of the outboard.",
+        "MainFeature": null,
+        "Category": {
+            "Id": 101,
+            "Name": "Engine",
+            "ImageUrl": null
+        },
+        "Subcategory": {
+            "Id": 101,
+            "Name": "Electric Engine",
+            "ImageUrl": null
+        },
+        "Manufacturer": "TechCo",
+        "PrimaryImage": null,
+        "OtherImages": null,
+        "Specifications": "richtext",
+        "Features": "*",
+        "Other": "sdf",
+        "Promotions": {
+            "Description": "sdf sxdcfvgbgfds sdfgb",
+            "Percentage": "10%",
+            "ValidTillDate": "2024-03-30T00:00:00"
+        },
+        "Condition": "New",
+        "Active": true
+    },
+    {
+        "Id": 2,
+        "ProductId": 0,
+        "Name": "Yacht 123",
+        "Description": "A powerful and lightweight laptop for productivity.",
+        "Subdescription": "Electric start :  Press the power button down, and then you're ready to go. Eliminate the need for manual wire pulling.",
+        "MainFeature": null,
+        "Category": {
+            "Id": 102,
+            "Name": "Speed Boats",
+            "ImageUrl": null
+        },
+        "Subcategory": {
+            "Id": 102,
+            "Name": "Fishing Boats",
+            "ImageUrl": null
+        },
+        "Manufacturer": "TechCo",
+        "PrimaryImage": null,
+        "OtherImages": null,
+        "Specifications": "richtext",
+        "Features": "*",
+        "Other": "sdf",
+        "Promotions": {
+            "Description": "sdf sxdcfvgbgfds sdfgb",
+            "Percentage": "10%",
+            "ValidTillDate": "2024-03-30T00:00:00"
+        },
+        "Condition": "Used",
+        "Active": true
+    },
+    {
+        "Id": 3,
+        "ProductId": 0,
+        "Name": "ATV 352",
+        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+        "Subdescription": "Magnetic emergency switch :  Allow for quick shutdown in emergency situations for added safety.",
+        "MainFeature": null,
+        "Category": {
+            "Id": 2,
+            "Name": "ATVs",
+            "ImageUrl": null
+        },
+        "Subcategory": {
+            "Id": 201,
+            "Name": "Electrical",
+            "ImageUrl": null
+        },
+        "Manufacturer": "FashionCo",
+        "PrimaryImage": null,
+        "OtherImages": null,
+        "Specifications": "richtext",
+        "Features": "*",
+        "Other": "asdfg",
+        "Promotions": {
+            "Description": "sdf sxdcfvgbgfds sdfgb",
+            "Percentage": "10%",
+            "ValidTillDate": "2024-03-30T00:00:00"
+        },
+        "Condition": "New",
+        "Active": false
+    },
+    {
+        "Id": 4,
+        "ProductId": 0,
+        "Name": "Electric Engine 882",
+        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+        "Subdescription": "Stepless throttle replacement :  For a clear, smooth, and pleasant operation.",
+        "MainFeature": null,
+        "Category": {
+            "Id": 201,
+            "Name": "Engines",
+            "ImageUrl": null
+        },
+        "Subcategory": {
+            "Id": 102,
+            "Name": "Electric Enginees",
+            "ImageUrl": null
+        },
+        "Manufacturer": "FashionCo",
+        "PrimaryImage": null,
+        "OtherImages": null,
+        "Specifications": "richtext",
+        "Features": "*",
+        "Other": "asdfg",
+        "Promotions": {
+            "Description": "sdf sxdcfvgbgfds sdfgb",
+            "Percentage": "10%",
+            "ValidTillDate": "2024-03-30T00:00:00"
+        },
+        "Condition": "New",
+        "Active": false
+    },
+    {
+        "Id": 5,
+        "ProductId": 0,
+        "Name": "ATV 352",
+        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+        "Subdescription": "Magnetic emergency switch :  Allow for quick shutdown in emergency situations for added safety.",
+        "MainFeature": null,
+        "Category": {
+            "Id": 2,
+            "Name": "ATVs",
+            "ImageUrl": null
+        },
+        "Subcategory": {
+            "Id": 202,
+            "Name": "Non-Electrical",
+            "ImageUrl": null
+        },
+        "Manufacturer": "FashionCo",
+        "PrimaryImage": null,
+        "OtherImages": null,
+        "Specifications": "richtext",
+        "Features": "*",
+        "Other": "asdfg",
+        "Promotions": {
+            "Description": "sdf sxdcfvgbgfds sdfgb",
+            "Percentage": "10%",
+            "ValidTillDate": "2024-03-30T00:00:00"
+        },
+        "Condition": "New",
+        "Active": false
+    },
+    {
+        "Id": 6,
+        "ProductId": 0,
+        "Name": "Engine 321",
+        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+        "Subdescription": "Digital LCD display :  Provide real-time information on the operating status of the outboard.",
+        "MainFeature": null,
+        "Category": {
+            "Id": 3,
+            "Name": "Engines",
+            "ImageUrl": null
+        },
+        "Subcategory": {
+            "Id": 301,
+            "Name": "Electric Enginees",
+            "ImageUrl": null
+        },
+        "Manufacturer": "FashionCo",
+        "PrimaryImage": null,
+        "OtherImages": null,
+        "Specifications": "richtext",
+        "Features": "*",
+        "Other": "asdfg",
+        "Promotions": {
+            "Description": "sdf sxdcfvgbgfds sdfgb",
+            "Percentage": "10%",
+            "ValidTillDate": "2024-03-30T00:00:00"
+        },
+        "Condition": "New",
+        "Active": false
+    },
+    {
+        "Id": 7,
+        "ProductId": 0,
+        "Name": "Engine 521",
+        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+        "Subdescription": "Electric start :  Press the power button down, and then you're ready to go. Eliminate the need for manual wire pulling.",
+        "MainFeature": null,
+        "Category": {
+            "Id": 3,
+            "Name": "Engines",
+            "ImageUrl": null
+        },
+        "Subcategory": {
+            "Id": 302,
+            "Name": "4-Strock-Outboard",
+            "ImageUrl": null
+        },
+        "Manufacturer": "FashionCo",
+        "PrimaryImage": null,
+        "OtherImages": null,
+        "Specifications": "richtext",
+        "Features": "*",
+        "Other": "asdfg",
+        "Promotions": {
+            "Description": "sdf sxdcfvgbgfds sdfgb",
+            "Percentage": "10%",
+            "ValidTillDate": "2024-03-30T00:00:00"
+        },
+        "Condition": "Used",
+        "Active": false
+    },
+    {
+        "Id": 8,
+        "ProductId": 0,
+        "Name": "Engine 521",
+        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+        "Subdescription": "Digital LCD display :  Provide real-time information on the operating status of the outboard.",
+        "MainFeature": null,
+        "Category": {
+            "Id": 3,
+            "Name": "Engines",
+            "ImageUrl": null
+        },
+        "Subcategory": {
+            "Id": 303,
+            "Name": "2-Strock-Outboard",
+            "ImageUrl": null
+        },
+        "Manufacturer": "FashionCo",
+        "PrimaryImage": null,
+        "OtherImages": null,
+        "Specifications": "richtext",
+        "Features": "*",
+        "Other": "asdfg",
+        "Promotions": {
+            "Description": "sdf sxdcfvgbgfds sdfgb",
+            "Percentage": "10%",
+            "ValidTillDate": "2024-03-30T00:00:00"
+        },
+        "Condition": "New",
+        "Active": false
+    },
+    {
+        "Id": 9,
+        "ProductId": 0,
+        "Name": "string",
+        "Description": "string",
+        "Subdescription": "string",
+        "MainFeature": "string",
+        "Category": {
+            "Id": 0,
+            "Name": "string",
+            "ImageUrl": "string"
+        },
+        "Subcategory": {
+            "Id": 0,
+            "Name": "string",
+            "ImageUrl": "string"
+        },
+        "Manufacturer": "string",
+        "PrimaryImage": "string",
+        "OtherImages": [
+            {
+                "ImageUrl": "string",
+                "ThumbImageUrl": "string",
+                "Title": "string"
+            }
+        ],
+        "Specifications": "string",
+        "Features": "string",
+        "Other": "string",
+        "Promotions": {
+            "Description": "string",
+            "Percentage": "string",
+            "ValidTillDate": "2024-01-16T08:17:23.341Z"
+        },
+        "Condition": "string",
+        "Active": true
+    }
+]

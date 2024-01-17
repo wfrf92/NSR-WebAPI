@@ -1,0 +1,25 @@
+[
+    {
+      "id":1,  
+      "product":"Joy1.2 Electric Outboard Motor",
+      "power":"1.2 kW (3HP equivalent)",
+      "battery":"1440 Wh lithium battery",
+      "voltage":"36V",
+      "weight":"20kg(short)",
+      "battery-Weight":"9.2kg",
+      "standard-charge":"8H",
+      "fast-charge":"2H",
+      "external-battery":"Yes",
+      "propeller":"3-9.25*5.1 inches ",
+      "trim-tilt-angle":"0°,5°, 10°,15°/ 75°",
+      "lenght":"17.0in.(S), 21.8in.(L) ",
+      "steer":"Tiller Handle",
+      "motor":"PMSM",
+      "direct-drive":"Yes",
+      "maintenance":"Free",
+      "range":"1 hr 12 minutes@rated power",
+      "water-proof":"IP67",
+      "rpm":"1750",
+      "active":"true"
+    }
+  ]
