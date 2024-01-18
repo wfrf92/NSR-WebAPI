@@ -2,6 +2,10 @@
 
 using Microsoft.AspNetCore.Mvc;
 
+using Microsoft.AspNetCore.Authorization;
+using System;
+
+[Authorize]
 [ApiController]
 [Route("api/promotions")]
 public class PromotionController : ControllerBase

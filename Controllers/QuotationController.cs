@@ -3,6 +3,10 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 
+using Microsoft.AspNetCore.Authorization;
+
+
+[Authorize]
 [ApiController]
 [Route("api/quotations")]
 public class QuotationController : ControllerBase

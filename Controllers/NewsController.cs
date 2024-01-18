@@ -1,7 +1,10 @@
 // Controllers/NewsController.cs
 
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
+
+[Authorize]
 [ApiController]
 [Route("api/news")]
 public class NewsController : ControllerBase

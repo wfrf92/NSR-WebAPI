@@ -2,6 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace NSR_WebAPI.Controllers;
 
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System;
+
+[Authorize]
 [ApiController]
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase

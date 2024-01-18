@@ -1,8 +1,10 @@
 // Controllers/CategoryController.cs
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
+[Authorize]
 [ApiController]
 [Route("api/categories")]
 public class CategoryController : ControllerBase

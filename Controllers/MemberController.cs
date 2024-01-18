@@ -1,7 +1,11 @@
 // Controllers/MemberController.cs
 
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
+
+
+[Authorize]
 [ApiController]
 [Route("api/members")]
 public class MemberController : ControllerBase
