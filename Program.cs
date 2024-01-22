@@ -36,20 +36,22 @@ builder.Services.AddSwaggerGen(c =>
         }
     );
 
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
+    c.AddSecurityRequirement(
+        new OpenApiSecurityRequirement
         {
-            new OpenApiSecurityScheme
             {
-                Reference = new OpenApiReference
+                new OpenApiSecurityScheme
                 {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            new List<string>()
+                    Reference = new OpenApiReference
+                    {
+                        Type = ReferenceType.SecurityScheme,
+                        Id = "Bearer"
+                    }
+                },
+                new List<string>()
+            }
         }
-    });
+    );
 
     // Optionally, include XML comments to Swagger UI (enable XML documentation in your project properties)
     var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -73,6 +75,15 @@ builder.Services
             )
         };
     });
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(
+        "AllowOrigin",
+        builder => builder.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod()
+    );
+});
+
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IAwardService, AwardService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
@@ -98,6 +109,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+ app.UseCors("AllowOrigin");
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
