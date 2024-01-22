@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 
 
-[Authorize]
+
 [ApiController]
 [Route("api/news")]
 public class NewsController : ControllerBase
@@ -36,6 +36,7 @@ public class NewsController : ControllerBase
         return NotFound(new { message = "News not found" });
     }
 
+[Authorize]
     [HttpPost]
     public IActionResult AddNews([FromBody] News newNews)
     {
@@ -43,6 +44,7 @@ public class NewsController : ControllerBase
         return Ok(new { message = "News added successfully" });
     }
 
+[Authorize]
     [HttpPut]
     public IActionResult UpdateNews([FromBody] News updatedNews)
     {
@@ -50,6 +52,7 @@ public class NewsController : ControllerBase
         return Ok(new { message = "News updated successfully" });
     }
 
+[Authorize]
     [HttpDelete("{id}")]
     public IActionResult DeleteNews(int id)
     {

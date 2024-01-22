@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using System;
 
-[Authorize]
 [ApiController]
 [Route("api/promotions")]
 public class PromotionController : ControllerBase
@@ -37,6 +36,7 @@ public class PromotionController : ControllerBase
         return NotFound(new { message = "Promotion not found" });
     }
 
+    [Authorize]
     [HttpPost]
     public IActionResult AddPromotion([FromBody] Promotion newPromotion)
     {
@@ -44,6 +44,7 @@ public class PromotionController : ControllerBase
         return Ok(new { message = "Promotion added successfully" });
     }
 
+    [Authorize]
     [HttpPut]
     public IActionResult UpdatePromotion([FromBody] Promotion updatedPromotion)
     {
@@ -51,6 +52,7 @@ public class PromotionController : ControllerBase
         return Ok(new { message = "Promotion updated successfully" });
     }
 
+    [Authorize]
     [HttpDelete("{id}")]
     public IActionResult DeletePromotion(int id)
     {

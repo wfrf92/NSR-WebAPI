@@ -2,6 +2,7 @@
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/appsettings.Development.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/appsettings.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/awards.json
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/b370733c8c8d4b45879b8db578ab7a4b.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/categories.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/contactus.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/members.json
@@ -16,10 +17,17 @@
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR-WebAPI.deps.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR-WebAPI.runtimeconfig.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR-WebAPI.pdb
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Microsoft.AspNetCore.OpenApi.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Microsoft.IdentityModel.Logging.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Microsoft.IdentityModel.Protocols.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Microsoft.IdentityModel.Tokens.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Microsoft.OpenApi.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Newtonsoft.Json.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Swashbuckle.AspNetCore.Swagger.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/System.IdentityModel.Tokens.Jwt.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR-WebAPI.xml

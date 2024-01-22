@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Authorization;
 
 
 
-[Authorize]
 [ApiController]
 [Route("api/members")]
 public class MemberController : ControllerBase
@@ -37,6 +36,7 @@ public class MemberController : ControllerBase
         return NotFound(new { message = "Member not found" });
     }
 
+[Authorize]
     [HttpPost]
     public IActionResult AddMember([FromBody] Member newMember)
     {
@@ -44,6 +44,7 @@ public class MemberController : ControllerBase
         return Ok(new { message = "Member added successfully" });
     }
 
+[Authorize]
     [HttpPut]
     public IActionResult UpdateMember([FromBody] Member updatedMember)
     {
@@ -51,6 +52,7 @@ public class MemberController : ControllerBase
         return Ok(new { message = "Member updated successfully" });
     }
 
+[Authorize]
     [HttpDelete("{id}")]
     public IActionResult DeleteMember(int id)
     {

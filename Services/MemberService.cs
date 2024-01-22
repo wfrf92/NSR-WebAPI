@@ -14,7 +14,7 @@ public class MemberService : IMemberService
 
     public List<Member> GetMemberFromJsonFile()
     {
-        var jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "Json/members.json");
+        var jsonFilePath = Path.Combine(AppContext.BaseDirectory, "Json/members.json");
 
         if (!File.Exists(jsonFilePath))
         {

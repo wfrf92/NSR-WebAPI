@@ -4,7 +4,6 @@ using System.Linq;
 
 using Microsoft.AspNetCore.Authorization;
 
-[Authorize]
 [ApiController]
 [Route("api/products")]
 public class ProductsController : ControllerBase
@@ -33,13 +32,22 @@ public class ProductsController : ControllerBase
         return Ok(product);
     }
 
-    [HttpPost]
+    [Authorize]
+    [HttpPost("createProduct")]
     public async Task<IActionResult> CreateProduct([FromBody] Product product)
     {
         var createdProduct = await _productService.CreateProductAsync(product);
-        return CreatedAtAction(nameof(GetProductById), new { id = createdProduct.Id }, createdProduct);
+        return CreatedAtAction(nameof(CreateProduct), new { id = createdProduct.Id }, createdProduct);
     }
 
+    [HttpPost("createQuotation")]
+    public async Task<IActionResult> CreateQuotation([FromBody] Quotation quotation)
+    {
+        var createdProduct = await _productService.CreateQuotationAsync(quotation);
+        return CreatedAtAction(nameof(CreateQuotation), new { id = createdProduct.Id }, createdProduct);
+    }
+
+    [Authorize]
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateProduct(int id, [FromBody] Product updatedProduct)
     {
@@ -56,6 +64,7 @@ public class ProductsController : ControllerBase
         return NoContent();
     }
 
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteProduct(int id)
     {

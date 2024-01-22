@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/NSR-WebAPI.props" />
-</Project>

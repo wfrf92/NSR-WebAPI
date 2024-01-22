@@ -14,7 +14,7 @@ public class SliderService : ISliderService
 
     public List<Slider> GetSliderFromJsonFile()
     {
-        var jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "Json/sliders.json");
+        var jsonFilePath = Path.Combine(AppContext.BaseDirectory, "Json/sliders.json");
 
         if (!File.Exists(jsonFilePath))
         {

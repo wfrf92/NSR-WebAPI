@@ -45,3 +45,11 @@
 /Users/francisfernando/NSR-WebAPI/obj/Release/net7.0/NSR-WebAPI.pdb
 /Users/francisfernando/NSR-WebAPI/obj/Release/net7.0/NSR-WebAPI.genruntimeconfig.cache
 /Users/francisfernando/NSR-WebAPI/obj/Release/net7.0/ref/NSR-WebAPI.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Json/b370733c8c8d4b45879b8db578ab7a4b.json
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/System.IdentityModel.Tokens.Jwt.dll

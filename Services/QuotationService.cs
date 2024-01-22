@@ -15,7 +15,7 @@ public class QuotationService : IQuotationService
 
     public List<Quotation> GetQuotationFromJsonFile()
     {
-        var jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "Json/quotations.json");
+        var jsonFilePath = Path.Combine(AppContext.BaseDirectory, "Json/quotations.json");
 
         if (!File.Exists(jsonFilePath))
         {

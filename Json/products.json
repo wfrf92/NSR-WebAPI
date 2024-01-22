@@ -1,287 +1,434 @@
 [
     {
-        "Id": 1,
-        "ProductId": 0,
-        "Name": "Joy1.2 Electric Outboard Motor",
-        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
-        "Subdescription": "Digital LCD display :  Provide real-time information on the operating status of the outboard.",
-        "MainFeature": null,
-        "Category": {
-            "Id": 101,
-            "Name": "Engine",
-            "ImageUrl": null
+      "id":1,
+      "product_id": 1,
+      "name": "Joy1.2 Electric Outboard Motor",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Digital LCD display :  Provide real-time information on the operating status of the outboard.",
+      "main_feature": "1440WH",
+      "category": {
+        "id": 101,
+        "name": "Engine",
+        "image_url": " https://example.com/electronics_image.jpg"
+      },
+      "subcategory": {
+        "id": 101,
+        "name": "Electric Engine",
+        "image_url": " https://example.com/smartphones_image.jpg"
+      },
+      "manufacturer": "TechCo",
+      "primary_image": "../../../assets/images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "/assets/images/Main_Shaft.jpg",
+          "thumbImage": "/assets/images/Main_Shaft.jpg",
+          "title": "Main Shaft"
         },
-        "Subcategory": {
-            "Id": 101,
-            "Name": "Electric Engine",
-            "ImageUrl": null
+        {
+          "image": "/assets/images/Battery.jpg",
+          "thumbImage": "/assets/images/Battery.jpg",
+          "title": "Example with title."
         },
-        "Manufacturer": "TechCo",
-        "PrimaryImage": null,
-        "OtherImages": null,
-        "Specifications": "richtext",
-        "Features": "*",
-        "Other": "sdf",
-        "Promotions": {
-            "Description": "sdf sxdcfvgbgfds sdfgb",
-            "Percentage": "10%",
-            "ValidTillDate": "2024-03-30T00:00:00"
+        {
+          "image": "/assets/images/Emergency Stop Switch.jpg",
+          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
         },
-        "Condition": "New",
-        "Active": true
+        {
+          "image": "/assets/images/Battery Charger.jpg",
+          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "sdf",
+      "promotions": 
+                      {
+                        "description":"sdf sxdcfvgbgfds sdfgb",
+                        "percentage":"10%",
+                        "validTillDate": "2024/03/30"
+                      }
+                    ,
+      "condition":"New",
+      "active": "true"
     },
     {
-        "Id": 2,
-        "ProductId": 0,
-        "Name": "Yacht 123",
-        "Description": "A powerful and lightweight laptop for productivity.",
-        "Subdescription": "Electric start :  Press the power button down, and then you're ready to go. Eliminate the need for manual wire pulling.",
-        "MainFeature": null,
-        "Category": {
-            "Id": 102,
-            "Name": "Speed Boats",
-            "ImageUrl": null
+      "id":2,
+      "product_id": 2,
+      "name": "Yacht 123",
+      "description": "A powerful and lightweight laptop for productivity.",
+      "subdescription": "Electric start :  Press the power button down, and then you're ready to go. Eliminate the need for manual wire pulling.",
+      "main_feature": "Luxury",
+      "category": {
+        "id": 102,
+        "name": "Speed Boats",
+        "image_url": " https://example.com/electronics_image.jpg"
+      },
+      "subcategory": {
+        "id": 102,
+        "name": "Fishing Boats",
+        "image_url": " https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "TechCo",
+      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "/assets/images/Main Shaft.jpg",
+          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "title": "Main Shaft"
         },
-        "Subcategory": {
-            "Id": 102,
-            "Name": "Fishing Boats",
-            "ImageUrl": null
+        {
+          "image": "/assets/images/Battery.jpg",
+          "thumbImage": "/assets/images/Battery.jpg",
+          "title": "Example with title."
         },
-        "Manufacturer": "TechCo",
-        "PrimaryImage": null,
-        "OtherImages": null,
-        "Specifications": "richtext",
-        "Features": "*",
-        "Other": "sdf",
-        "Promotions": {
-            "Description": "sdf sxdcfvgbgfds sdfgb",
-            "Percentage": "10%",
-            "ValidTillDate": "2024-03-30T00:00:00"
+        {
+          "image": "/assets/images/Emergency Stop Switch.jpg",
+          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
         },
-        "Condition": "Used",
-        "Active": true
+        {
+          "image": "/assets/images/Battery Charger.jpg",
+          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "sdf",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"Used",
+      "active": "true"
     },
     {
-        "Id": 3,
-        "ProductId": 0,
-        "Name": "ATV 352",
-        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
-        "Subdescription": "Magnetic emergency switch :  Allow for quick shutdown in emergency situations for added safety.",
-        "MainFeature": null,
-        "Category": {
-            "Id": 2,
-            "Name": "ATVs",
-            "ImageUrl": null
+      "id":3,
+      "product_id": 3,
+      "name": "ATV 352",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Magnetic emergency switch :  Allow for quick shutdown in emergency situations for added safety.",
+      "main_feature": "150WH",
+      "category": {
+        "id": 2,
+        "name": "ATVs",
+        "image_url": " https://example.com/clothing_image.jpg"
+      },
+      "subcategory": {
+        "id": 201,
+        "name": "Electrical",
+        "image_url": " https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "FashionCo",
+      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "/assets/images/Main Shaft.jpg",
+          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "title": "Main Shaft"
         },
-        "Subcategory": {
-            "Id": 201,
-            "Name": "Electrical",
-            "ImageUrl": null
+        {
+          "image": "/assets/images/Battery.jpg",
+          "thumbImage": "/assets/images/Battery.jpg",
+          "title": "Example with title."
         },
-        "Manufacturer": "FashionCo",
-        "PrimaryImage": null,
-        "OtherImages": null,
-        "Specifications": "richtext",
-        "Features": "*",
-        "Other": "asdfg",
-        "Promotions": {
-            "Description": "sdf sxdcfvgbgfds sdfgb",
-            "Percentage": "10%",
-            "ValidTillDate": "2024-03-30T00:00:00"
+        {
+          "image": "/assets/images/Emergency Stop Switch.jpg",
+          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
         },
-        "Condition": "New",
-        "Active": false
+        {
+          "image": "/assets/images/Battery Charger.jpg",
+          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "asdfg",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"New",
+      "active": "false"
     },
     {
-        "Id": 4,
-        "ProductId": 0,
-        "Name": "Electric Engine 882",
-        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
-        "Subdescription": "Stepless throttle replacement :  For a clear, smooth, and pleasant operation.",
-        "MainFeature": null,
-        "Category": {
-            "Id": 201,
-            "Name": "Engines",
-            "ImageUrl": null
+      "id":4,
+      "product_id": 4,
+      "name": "Electric Engine 882",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Stepless throttle replacement :  For a clear, smooth, and pleasant operation.",
+      "main_feature": "150WH",
+      "category": {
+        "id": 201,
+        "name": "Engines",
+        "image_url": " https://example.com/clothing_image.jpg"
+      },
+      "subcategory": {
+        "id": 102,
+        "name": "Electric Enginees",
+        "image_url": " https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "FashionCo",
+      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "/assets/images/Main Shaft.jpg",
+          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "title": "Main Shaft"
         },
-        "Subcategory": {
-            "Id": 102,
-            "Name": "Electric Enginees",
-            "ImageUrl": null
+        {
+          "image": "/assets/images/Battery.jpg",
+          "thumbImage": "/assets/images/Battery.jpg",
+          "title": "Example with title."
         },
-        "Manufacturer": "FashionCo",
-        "PrimaryImage": null,
-        "OtherImages": null,
-        "Specifications": "richtext",
-        "Features": "*",
-        "Other": "asdfg",
-        "Promotions": {
-            "Description": "sdf sxdcfvgbgfds sdfgb",
-            "Percentage": "10%",
-            "ValidTillDate": "2024-03-30T00:00:00"
+        {
+          "image": "/assets/images/Emergency Stop Switch.jpg",
+          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
         },
-        "Condition": "New",
-        "Active": false
+        {
+          "image": "/assets/images/Battery Charger.jpg",
+          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "asdfg",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"New",
+      "active": "false"
     },
     {
-        "Id": 5,
-        "ProductId": 0,
-        "Name": "ATV 352",
-        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
-        "Subdescription": "Magnetic emergency switch :  Allow for quick shutdown in emergency situations for added safety.",
-        "MainFeature": null,
-        "Category": {
-            "Id": 2,
-            "Name": "ATVs",
-            "ImageUrl": null
+      "id":5,
+      "product_id": 5,
+      "name": "ATV 352",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Magnetic emergency switch :  Allow for quick shutdown in emergency situations for added safety.",
+      "main_feature": "150WH",
+      "category": {
+        "id": 2,
+        "name": "ATVs",
+        "image_url": " https://example.com/clothing_image.jpg"
+      },
+      "subcategory": {
+        "id": 202,
+        "name": "Non-Electrical",
+        "image_url": " https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "FashionCo",
+      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "/assets/images/Main Shaft.jpg",
+          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "title": "Main Shaft"
         },
-        "Subcategory": {
-            "Id": 202,
-            "Name": "Non-Electrical",
-            "ImageUrl": null
+        {
+          "image": "/assets/images/Battery.jpg",
+          "thumbImage": "/assets/images/Battery.jpg",
+          "title": "Example with title."
         },
-        "Manufacturer": "FashionCo",
-        "PrimaryImage": null,
-        "OtherImages": null,
-        "Specifications": "richtext",
-        "Features": "*",
-        "Other": "asdfg",
-        "Promotions": {
-            "Description": "sdf sxdcfvgbgfds sdfgb",
-            "Percentage": "10%",
-            "ValidTillDate": "2024-03-30T00:00:00"
+        {
+          "image": "/assets/images/Emergency Stop Switch.jpg",
+          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
         },
-        "Condition": "New",
-        "Active": false
+        {
+          "image": "/assets/images/Battery Charger.jpg",
+          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "asdfg",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"New",
+      "active": "false"
     },
     {
-        "Id": 6,
-        "ProductId": 0,
-        "Name": "Engine 321",
-        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
-        "Subdescription": "Digital LCD display :  Provide real-time information on the operating status of the outboard.",
-        "MainFeature": null,
-        "Category": {
-            "Id": 3,
-            "Name": "Engines",
-            "ImageUrl": null
+      "id":6,
+      "product_id": 6,
+      "name": "Engine 321",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Digital LCD display :  Provide real-time information on the operating status of the outboard.",
+      "main_feature": "150WH",
+      "category": {
+        "id": 3,
+        "name": "Engines",
+        "image_url": " https://example.com/clothing_image.jpg"
+      },
+      "subcategory": {
+        "id": 301,
+        "name": "Electric Enginees",
+        "image_url": " https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "FashionCo",
+      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "/assets/images/Main Shaft.jpg",
+          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "title": "Main Shaft"
         },
-        "Subcategory": {
-            "Id": 301,
-            "Name": "Electric Enginees",
-            "ImageUrl": null
+        {
+          "image": "/assets/images/Battery.jpg",
+          "thumbImage": "/assets/images/Battery.jpg",
+          "title": "Example with title."
         },
-        "Manufacturer": "FashionCo",
-        "PrimaryImage": null,
-        "OtherImages": null,
-        "Specifications": "richtext",
-        "Features": "*",
-        "Other": "asdfg",
-        "Promotions": {
-            "Description": "sdf sxdcfvgbgfds sdfgb",
-            "Percentage": "10%",
-            "ValidTillDate": "2024-03-30T00:00:00"
+        {
+          "image": "/assets/images/Emergency Stop Switch.jpg",
+          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
         },
-        "Condition": "New",
-        "Active": false
+        {
+          "image": "/assets/images/Battery Charger.jpg",
+          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "asdfg",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"New",
+      "active": "false"
     },
     {
-        "Id": 7,
-        "ProductId": 0,
-        "Name": "Engine 521",
-        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
-        "Subdescription": "Electric start :  Press the power button down, and then you're ready to go. Eliminate the need for manual wire pulling.",
-        "MainFeature": null,
-        "Category": {
-            "Id": 3,
-            "Name": "Engines",
-            "ImageUrl": null
+      "id":7,
+      "product_id": 7,
+      "name": "Engine 521",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Electric start :  Press the power button down, and then you're ready to go. Eliminate the need for manual wire pulling.",
+      "main_feature": "150WH",
+      "category": {
+        "id": 3,
+        "name": "Engines",
+        "image_url": " https://example.com/clothing_image.jpg"
+      },
+      "subcategory": {
+        "id": 302,
+        "name": "4-Strock-Outboard",
+        "image_url": " https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "FashionCo",
+      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "/assets/images/Main Shaft.jpg",
+          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "title": "Main Shaft"
         },
-        "Subcategory": {
-            "Id": 302,
-            "Name": "4-Strock-Outboard",
-            "ImageUrl": null
+        {
+          "image": "/assets/images/Battery.jpg",
+          "thumbImage": "/assets/images/Battery.jpg",
+          "title": "Example with title."
         },
-        "Manufacturer": "FashionCo",
-        "PrimaryImage": null,
-        "OtherImages": null,
-        "Specifications": "richtext",
-        "Features": "*",
-        "Other": "asdfg",
-        "Promotions": {
-            "Description": "sdf sxdcfvgbgfds sdfgb",
-            "Percentage": "10%",
-            "ValidTillDate": "2024-03-30T00:00:00"
+        {
+          "image": "/assets/images/Emergency Stop Switch.jpg",
+          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
         },
-        "Condition": "Used",
-        "Active": false
+        {
+          "image": "/assets/images/Battery Charger.jpg",
+          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "asdfg",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"Used",
+      "active": "false"
     },
     {
-        "Id": 8,
-        "ProductId": 0,
-        "Name": "Engine 521",
-        "Description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
-        "Subdescription": "Digital LCD display :  Provide real-time information on the operating status of the outboard.",
-        "MainFeature": null,
-        "Category": {
-            "Id": 3,
-            "Name": "Engines",
-            "ImageUrl": null
+      "id":8,
+      "product_id": 8,
+      "name": "Engine 521",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Digital LCD display :  Provide real-time information on the operating status of the outboard.",
+      "main_feature": "150WH",
+      "category": {
+        "id": 3,
+        "name": "Engines",
+        "image_url": " https://example.com/clothing_image.jpg"
+      },
+      "subcategory": {
+        "id": 303,
+        "name": "2-Strock-Outboard",
+        "image_url": " https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "FashionCo",
+      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "/assets/images/Main Shaft.jpg",
+          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "title": "Main Shaft"
         },
-        "Subcategory": {
-            "Id": 303,
-            "Name": "2-Strock-Outboard",
-            "ImageUrl": null
+        {
+          "image": "/assets/images/Battery.jpg",
+          "thumbImage": "/assets/images/Battery.jpg",
+          "title": "Example with title."
         },
-        "Manufacturer": "FashionCo",
-        "PrimaryImage": null,
-        "OtherImages": null,
-        "Specifications": "richtext",
-        "Features": "*",
-        "Other": "asdfg",
-        "Promotions": {
-            "Description": "sdf sxdcfvgbgfds sdfgb",
-            "Percentage": "10%",
-            "ValidTillDate": "2024-03-30T00:00:00"
+        {
+          "image": "/assets/images/Emergency Stop Switch.jpg",
+          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
         },
-        "Condition": "New",
-        "Active": false
-    },
-    {
-        "Id": 9,
-        "ProductId": 0,
-        "Name": "string",
-        "Description": "string",
-        "Subdescription": "string",
-        "MainFeature": "string",
-        "Category": {
-            "Id": 0,
-            "Name": "string",
-            "ImageUrl": "string"
-        },
-        "Subcategory": {
-            "Id": 0,
-            "Name": "string",
-            "ImageUrl": "string"
-        },
-        "Manufacturer": "string",
-        "PrimaryImage": "string",
-        "OtherImages": [
-            {
-                "ImageUrl": "string",
-                "ThumbImageUrl": "string",
-                "Title": "string"
-            }
-        ],
-        "Specifications": "string",
-        "Features": "string",
-        "Other": "string",
-        "Promotions": {
-            "Description": "string",
-            "Percentage": "string",
-            "ValidTillDate": "2024-01-16T08:17:23.341Z"
-        },
-        "Condition": "string",
-        "Active": true
+        {
+          "image": "/assets/images/Battery Charger.jpg",
+          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "asdfg",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"New",
+      "active": "false"
     }
-]
+  ]

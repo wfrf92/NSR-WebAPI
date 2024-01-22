@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 
 
-[Authorize]
+
 [ApiController]
 [Route("api/sliders")]
 public class SliderController : ControllerBase
@@ -37,6 +37,7 @@ public class SliderController : ControllerBase
         return NotFound(new { message = "Slider not found" });
     }
 
+[Authorize]
     [HttpPost]
     public IActionResult AddSlider([FromBody] Slider newSlider)
     {
@@ -44,6 +45,7 @@ public class SliderController : ControllerBase
         return Ok(new { message = "Slider added successfully" });
     }
 
+[Authorize]
     [HttpPut]
     public IActionResult UpdateSlider([FromBody] Slider updatedSlider)
     {
@@ -51,6 +53,7 @@ public class SliderController : ControllerBase
         return Ok(new { message = "Slider updated successfully" });
     }
 
+[Authorize]
     [HttpDelete("{id}")]
     public IActionResult DeleteSlider(int id)
     {

@@ -14,7 +14,7 @@ public class PromotionService : IPromotionService
 
     public List<Promotion> GetPromoFromJsonFile()
     {
-        var jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "Json/promotions.json");
+        var jsonFilePath = Path.Combine(AppContext.BaseDirectory, "Json/promotions.json");
 
         if (!File.Exists(jsonFilePath))
         {

@@ -14,7 +14,7 @@ public class CategoryService : ICategoryService
 
     public List<Category> GetCategoryFromJsonFile()
     {
-        var jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "Json/categories.json");
+        var jsonFilePath = Path.Combine(AppContext.BaseDirectory, "Json/categories.json");
 
         if (!File.Exists(jsonFilePath))
         {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 // AwardsController.cs
-[Authorize]
+
 [ApiController]
 [Route("api/[controller]")]
 public class AwardsController : ControllerBase
@@ -37,6 +37,7 @@ public class AwardsController : ControllerBase
         return Ok(award);
     }
 
+    [Authorize]
     [HttpPost]
     public ActionResult<Award> Post([FromBody] Award award)
     {
@@ -44,6 +45,7 @@ public class AwardsController : ControllerBase
         return CreatedAtAction(nameof(Get), new { id = award.Id }, award);
     }
 
+    [Authorize]
     [HttpPut("{id}")]
     public IActionResult Put(int id, [FromBody] Award updatedAward)
     {
@@ -51,6 +53,7 @@ public class AwardsController : ControllerBase
         return NoContent();
     }
 
+    [Authorize]
     [HttpDelete("{id}")]
     public IActionResult Delete(int id)
     {
@@ -58,4 +61,3 @@ public class AwardsController : ControllerBase
         return NoContent();
     }
 }
-

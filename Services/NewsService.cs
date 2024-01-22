@@ -14,7 +14,7 @@ public class NewsService : INewsService
 
     public List<News> GetNewsFromJsonFile()
     {
-        var jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "Json/news.json");
+        var jsonFilePath = Path.Combine(AppContext.BaseDirectory, "Json/news.json");
 
         if (!File.Exists(jsonFilePath))
         {

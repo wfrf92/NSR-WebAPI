@@ -5,8 +5,6 @@ using System;
 
 using Microsoft.AspNetCore.Authorization;
 
-
-[Authorize]
 [ApiController]
 [Route("api/quotations")]
 public class QuotationController : ControllerBase
@@ -38,6 +36,7 @@ public class QuotationController : ControllerBase
         return NotFound(new { message = "Quotation not found" });
     }
 
+    [Authorize]
     [HttpPost]
     public IActionResult AddQuotation([FromBody] Quotation newQuotation)
     {
@@ -45,6 +44,7 @@ public class QuotationController : ControllerBase
         return Ok(new { message = "Quotation added successfully" });
     }
 
+    [Authorize]
     [HttpPut]
     public IActionResult UpdateQuotation([FromBody] Quotation updatedQuotation)
     {
@@ -52,6 +52,7 @@ public class QuotationController : ControllerBase
         return Ok(new { message = "Quotation updated successfully" });
     }
 
+    [Authorize]
     [HttpDelete("{id}")]
     public IActionResult DeleteQuotation(int id)
     {

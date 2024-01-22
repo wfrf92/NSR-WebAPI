@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
-[Authorize]
+
 [ApiController]
 [Route("api/categories")]
 public class CategoryController : ControllerBase
@@ -36,6 +36,7 @@ public class CategoryController : ControllerBase
         return NotFound(new { message = "Category not found" });
     }
 
+[Authorize]
     [HttpPost]
     public IActionResult AddCategory([FromBody] Category newCategory)
     {
@@ -43,6 +44,7 @@ public class CategoryController : ControllerBase
         return Ok(new { message = "Category added successfully" });
     }
 
+[Authorize]
     [HttpPut]
     public IActionResult UpdateCategory([FromBody] Category updatedCategory)
     {
@@ -50,6 +52,7 @@ public class CategoryController : ControllerBase
         return Ok(new { message = "Category updated successfully" });
     }
 
+[Authorize]
     [HttpDelete("{id}")]
     public IActionResult DeleteCategory(int id)
     {

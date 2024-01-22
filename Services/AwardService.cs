@@ -15,8 +15,12 @@ public class AwardService : IAwardService
 
     public List<Award> GetAwardFromJsonFile()
     {
-        var jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "Json/awards.json");
+        // Add this before the file check
+Console.WriteLine($"Current Working Directory: {AppContext.BaseDirectory}");
 
+
+        var jsonFilePath = Path.Combine(AppContext.BaseDirectory, "Json/awards.json");
+Console.WriteLine($"Composed File Path: {jsonFilePath}");
         if (!File.Exists(jsonFilePath))
         {
             // Handle the case when the file does not exist
