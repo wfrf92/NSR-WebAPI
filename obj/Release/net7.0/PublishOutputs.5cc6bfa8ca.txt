@@ -1,4 +1,4 @@
-/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR-WebAPI
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR_WebAPI
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/appsettings.Development.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/appsettings.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/awards.json
@@ -13,10 +13,56 @@
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/quotations.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/sliders.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/specification.json
-/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR-WebAPI.dll
-/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR-WebAPI.deps.json
-/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR-WebAPI.runtimeconfig.json
-/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR-WebAPI.pdb
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/about-us-bg.jpg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Admin-Settings.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/atvs.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Battery Charger.jpg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Battery.jpg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/CEO.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Customer-Support.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Emergency Stop Switch.jpg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/engine1.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/engines.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/favicon.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/home-contact-us-bg.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icon-about-us.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icon-atv.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icon-contact-us.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icon-discount.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icon-engine.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icon-news.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icon-search.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icon-yacht.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icons-fb.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icons-linkedin.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icons-twitter.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icons-user-login.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/icons-youtube.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Joy1.2 Electric Outboard Motor-features.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Joy1.2 Electric Outboard Motor.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/login (2).png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/login.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Main_Shaft.jpg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/mission.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/news-category.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/news.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/NSR-logo.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/NSR-logo.svg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/promo-1.jpg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/promo-2.jpg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/promo-3.jpg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/promo1.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/slider-img-1.jpg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/slider-img-2.jpg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/speed-boats.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/success.gif
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/top-header.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/top.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/vision.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR_WebAPI.dll
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR_WebAPI.deps.json
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR_WebAPI.runtimeconfig.json
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR_WebAPI.pdb
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Microsoft.AspNetCore.OpenApi.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Microsoft.IdentityModel.JsonWebTokens.dll
@@ -30,4 +76,4 @@
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/System.IdentityModel.Tokens.Jwt.dll
-/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR-WebAPI.xml
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/NSR_WebAPI.xml

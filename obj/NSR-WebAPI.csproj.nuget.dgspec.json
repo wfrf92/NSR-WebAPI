@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "/Users/francisfernando/NSR-WebAPI/NSR-WebAPI.csproj",
-        "projectName": "NSR-WebAPI",
+        "projectName": "NSR_WebAPI",
         "projectPath": "/Users/francisfernando/NSR-WebAPI/NSR-WebAPI.csproj",
         "packagesPath": "/Users/francisfernando/.nuget/packages/",
         "outputPath": "/Users/francisfernando/NSR-WebAPI/obj/",

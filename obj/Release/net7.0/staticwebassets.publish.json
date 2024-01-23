@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "kHgFI8TYYrnPnhHlTW8w9/gBalr0fdEA7tj3vMbsW8M=",
-  "Source": "NSR-WebAPI",
-  "BasePath": "_content/NSR-WebAPI",
+  "Hash": "UjZOyhvDr1G9BlJWa3WZFRIXrYGUL7lWXue9P9kZC3o=",
+  "Source": "NSR_WebAPI",
+  "BasePath": "_content/NSR_WebAPI",
   "Mode": "Default",
   "ManifestType": "Publish",
   "ReferencedProjectsConfiguration": [],

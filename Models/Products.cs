@@ -26,7 +26,7 @@ public class Product
     public string PrimaryImage { get; set; }
 
     [JsonProperty("other_images")]
-    public List<Image> OtherImages { get; set; }
+    public List<OtherImage> OtherImages { get; set; }
 
     public string Specifications { get; set; }
     public string Features { get; set; }

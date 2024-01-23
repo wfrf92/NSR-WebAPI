@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>NSR_WebAPI</RootNamespace>
       <GenerateDocumentationFile>true</GenerateDocumentationFile>
+       <AssemblyName>NSR_WebAPI</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,5 +16,10 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
+  <ItemGroup>
+  <None Update="Images\**\*">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </None>
+</ItemGroup>
 
 </Project>

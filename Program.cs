@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using System.Reflection;
 using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -52,6 +53,8 @@ builder.Services.AddSwaggerGen(c =>
                 new List<string>()
             }
         }
+
+        
     );
 
     // Optionally, include XML comments to Swagger UI (enable XML documentation in your project properties)
@@ -59,6 +62,9 @@ builder.Services.AddSwaggerGen(c =>
 
     var xmlPath = System.IO.Path.Combine(AppContext.BaseDirectory, xmlFile);
     c.IncludeXmlComments(xmlPath);
+
+    // Add this line to include the /images URL in Swagger documentation
+    //c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "NSR_WebAPI.xml"));
 });
 
 builder.Services
@@ -97,14 +103,11 @@ builder.Services.AddScoped<IPromotionService, PromotionService>();
 builder.Services.AddScoped<IQuotationService, QuotationService>();
 builder.Services.AddScoped<ISliderService, SliderService>();
 
+builder.Services.AddDirectoryBrowser();
+
 var app = builder.Build();
 
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(), "Images")),
-    RequestPath = "/Images"
-});
+
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
@@ -117,9 +120,18 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+     app.UseDeveloperExceptionPage();
 }
 
  app.UseCors("AllowOrigin");
+
+
+// Add this line to serve static files from the "images" folder
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(System.IO.Path.Combine(app.Environment.ContentRootPath, "Images")),
+    RequestPath = "/Images"
+});
 
 app.UseForwardedHeaders();
 app.UseAuthentication();
