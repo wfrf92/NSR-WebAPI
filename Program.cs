@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 var appSettings = new ConfigurationBuilder()
@@ -84,6 +85,9 @@ builder.Services.AddCors(options =>
     );
 });
 
+
+
+
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IAwardService, AwardService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
@@ -95,6 +99,12 @@ builder.Services.AddScoped<ISliderService, SliderService>();
 
 var app = builder.Build();
 
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "Images")),
+    RequestPath = "/Images"
+});
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {

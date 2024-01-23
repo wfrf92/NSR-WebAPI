@@ -17,26 +17,26 @@
         "image_url": " https://example.com/smartphones_image.jpg"
       },
       "manufacturer": "TechCo",
-      "primary_image": "../../../assets/images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image": "https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
-          "image": "/assets/images/Main_Shaft.jpg",
-          "thumbImage": "/assets/images/Main_Shaft.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
           "title": "Main Shaft"
         },
         {
-          "image": "/assets/images/Battery.jpg",
-          "thumbImage": "/assets/images/Battery.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
           "title": "Example with title."
         },
         {
-          "image": "/assets/images/Emergency Stop Switch.jpg",
-          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
           "title": "Emergency Stop Switch"
         },
         {
-          "image": "/assets/images/Battery Charger.jpg",
-          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
           "title": "Battery Charger"
         }
       ],
@@ -71,26 +71,26 @@
         "image_url": " https://example.com/laptops_image.jpg"
       },
       "manufacturer": "TechCo",
-      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
-          "image": "/assets/images/Main Shaft.jpg",
-          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
           "title": "Main Shaft"
         },
         {
-          "image": "/assets/images/Battery.jpg",
-          "thumbImage": "/assets/images/Battery.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
           "title": "Example with title."
         },
         {
-          "image": "/assets/images/Emergency Stop Switch.jpg",
-          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
           "title": "Emergency Stop Switch"
         },
         {
-          "image": "/assets/images/Battery Charger.jpg",
-          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
           "title": "Battery Charger"
         }
       ],
@@ -125,26 +125,26 @@
         "image_url": " https://example.com/laptops_image.jpg"
       },
       "manufacturer": "FashionCo",
-      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
-          "image": "/assets/images/Main Shaft.jpg",
-          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
           "title": "Main Shaft"
         },
         {
-          "image": "/assets/images/Battery.jpg",
-          "thumbImage": "/assets/images/Battery.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
           "title": "Example with title."
         },
         {
-          "image": "/assets/images/Emergency Stop Switch.jpg",
-          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
           "title": "Emergency Stop Switch"
         },
         {
-          "image": "/assets/images/Battery Charger.jpg",
-          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
           "title": "Battery Charger"
         }
       ],
@@ -179,26 +179,26 @@
         "image_url": " https://example.com/laptops_image.jpg"
       },
       "manufacturer": "FashionCo",
-      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
-          "image": "/assets/images/Main Shaft.jpg",
-          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
           "title": "Main Shaft"
         },
         {
-          "image": "/assets/images/Battery.jpg",
-          "thumbImage": "/assets/images/Battery.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
           "title": "Example with title."
         },
         {
-          "image": "/assets/images/Emergency Stop Switch.jpg",
-          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
           "title": "Emergency Stop Switch"
         },
         {
-          "image": "/assets/images/Battery Charger.jpg",
-          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
           "title": "Battery Charger"
         }
       ],
@@ -233,26 +233,26 @@
         "image_url": " https://example.com/laptops_image.jpg"
       },
       "manufacturer": "FashionCo",
-      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
-          "image": "/assets/images/Main Shaft.jpg",
-          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
           "title": "Main Shaft"
         },
         {
-          "image": "/assets/images/Battery.jpg",
-          "thumbImage": "/assets/images/Battery.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
           "title": "Example with title."
         },
         {
-          "image": "/assets/images/Emergency Stop Switch.jpg",
-          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
           "title": "Emergency Stop Switch"
         },
         {
-          "image": "/assets/images/Battery Charger.jpg",
-          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
           "title": "Battery Charger"
         }
       ],
@@ -287,26 +287,26 @@
         "image_url": " https://example.com/laptops_image.jpg"
       },
       "manufacturer": "FashionCo",
-      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
-          "image": "/assets/images/Main Shaft.jpg",
-          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
           "title": "Main Shaft"
         },
         {
-          "image": "/assets/images/Battery.jpg",
-          "thumbImage": "/assets/images/Battery.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
           "title": "Example with title."
         },
         {
-          "image": "/assets/images/Emergency Stop Switch.jpg",
-          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
           "title": "Emergency Stop Switch"
         },
         {
-          "image": "/assets/images/Battery Charger.jpg",
-          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
           "title": "Battery Charger"
         }
       ],
@@ -341,26 +341,26 @@
         "image_url": " https://example.com/laptops_image.jpg"
       },
       "manufacturer": "FashionCo",
-      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
-          "image": "/assets/images/Main Shaft.jpg",
-          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
           "title": "Main Shaft"
         },
         {
-          "image": "/assets/images/Battery.jpg",
-          "thumbImage": "/assets/images/Battery.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
           "title": "Example with title."
         },
         {
-          "image": "/assets/images/Emergency Stop Switch.jpg",
-          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
           "title": "Emergency Stop Switch"
         },
         {
-          "image": "/assets/images/Battery Charger.jpg",
-          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
           "title": "Battery Charger"
         }
       ],
@@ -395,26 +395,26 @@
         "image_url": " https://example.com/laptops_image.jpg"
       },
       "manufacturer": "FashionCo",
-      "primary_image": " /assets/images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
-          "image": "/assets/images/Main Shaft.jpg",
-          "thumbImage": "/assets/images/Main Shaft.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main Shaft.jpg",
           "title": "Main Shaft"
         },
         {
-          "image": "/assets/images/Battery.jpg",
-          "thumbImage": "/assets/images/Battery.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
           "title": "Example with title."
         },
         {
-          "image": "/assets/images/Emergency Stop Switch.jpg",
-          "thumbImage": "/assets/images/Emergency Stop Switch.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
           "title": "Emergency Stop Switch"
         },
         {
-          "image": "/assets/images/Battery Charger.jpg",
-          "thumbImage": "/assets/images/Battery Charger.jpg",
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
           "title": "Battery Charger"
         }
       ],
