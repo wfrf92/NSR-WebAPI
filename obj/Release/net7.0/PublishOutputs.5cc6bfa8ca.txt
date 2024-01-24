@@ -6,13 +6,11 @@
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/categories.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/contactus.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/members.json
-/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/navigations.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/news.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/products.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/promotions.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/quotations.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/sliders.json
-/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/specification.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/15c393d4-2043-4834-896e-4ab3ed0422dc_2.jpeg
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/28e1125b-eaab-485e-badf-6a7ed6ae7e1b_1.jpeg
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/about-us-bg.jpg

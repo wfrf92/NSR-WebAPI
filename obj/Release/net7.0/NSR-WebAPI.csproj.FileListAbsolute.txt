@@ -4,13 +4,11 @@
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Json/categories.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Json/contactus.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Json/members.json
-/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Json/navigations.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Json/news.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Json/products.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Json/promotions.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Json/quotations.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Json/sliders.json
-/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Json/specification.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Microsoft.OpenApi.dll
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/Newtonsoft.Json.dll
