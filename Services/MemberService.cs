@@ -40,7 +40,20 @@ public class MemberService : IMemberService
 
     public void AddMember(Member newMember)
     {
+        newMember.Id = _members.Count + 1;
+        newMember.Active = true;
+
         _members.Add(newMember);
+
+          // Serialize the updated products list to JSON
+        string json = JsonConvert.SerializeObject(_members);
+
+        // Specify the path to your JSON file
+        string jfilePath = "Json/members.json";
+
+        // Write the JSON data to the file
+         File.WriteAllTextAsync(jfilePath, json);
+
     }
 
     public void UpdateMember(Member updatedMember)

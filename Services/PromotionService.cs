@@ -40,7 +40,18 @@ public class PromotionService : IPromotionService
 
     public void AddPromotion(Promotion newPromotion)
     {
+        newPromotion.Active = true;
+        newPromotion.Id = _promotions.Count + 1;
         _promotions.Add(newPromotion);
+
+        // Serialize the updated products list to JSON
+        string json = JsonConvert.SerializeObject(_promotions);
+
+        // Specify the path to your JSON file
+        string jfilePath = "Json/promotions.json";
+
+        // Write the JSON data to the file
+         File.WriteAllTextAsync(jfilePath, json);
     }
 
     public void UpdatePromotion(Promotion updatedPromotion)

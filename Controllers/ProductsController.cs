@@ -75,7 +75,7 @@ public class ProductsController : ControllerBase
 
             // Set the OtherImages property in the Product model
             product.OtherImages = otherImagePaths
-                .Select(path => new OtherImage { Image = path })
+                .Select(path => new OtherImage { Image = path , ThumbImage = path})
                 .ToList();
 
             return Ok(product);

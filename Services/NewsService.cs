@@ -40,7 +40,17 @@ public class NewsService : INewsService
 
     public void AddNews(News newNews)
     {
+        newNews.Active = true;
+        newNews.Id = _newsList.Count + 1;
         _newsList.Add(newNews);
+        // Serialize the updated products list to JSON
+        string json = JsonConvert.SerializeObject(_newsList);
+
+        // Specify the path to your JSON file
+        string jfilePath = "Json/news.json";
+
+        // Write the JSON data to the file
+         File.WriteAllTextAsync(jfilePath, json);
     }
 
     public void UpdateNews(News updatedNews)

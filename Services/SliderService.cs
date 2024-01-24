@@ -40,7 +40,19 @@ public class SliderService : ISliderService
 
     public void AddSlider(Slider newSlider)
     {
+        newSlider.Active = true;
+        newSlider.Id = _sliders.Count + 1;
         _sliders.Add(newSlider);
+
+          // Serialize the updated products list to JSON
+        string json = JsonConvert.SerializeObject(_sliders);
+
+        // Specify the path to your JSON file
+        string jfilePath = "Json/sliders.json";
+
+        // Write the JSON data to the file
+         File.WriteAllTextAsync(jfilePath, json);
+
     }
 
     public void UpdateSlider(Slider updatedSlider)
