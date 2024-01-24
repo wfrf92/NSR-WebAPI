@@ -1,5 +1,6 @@
 using System.Net;
 using System.Net.Mail;
+using Newtonsoft.Json;
 
 public class ContactUsService : IContactService
 {
@@ -67,5 +68,45 @@ public class ContactUsService : IContactService
             Console.WriteLine($"Error SaveContactForm: {ex.Message}");
             return false;
         }
+    }
+
+    Task<FooterContactUs> IContactService.GetContactInfoAsync()
+    {
+        return Task.FromResult(GetFooterContactUsFromJsonFile());
+    }
+
+    public FooterContactUs GetFooterContactUsFromJsonFile()
+    {
+        var jsonFilePath = Path.Combine(AppContext.BaseDirectory, "Json/contactus.json");
+
+        if (!File.Exists(jsonFilePath))
+        {
+            // Handle the case when the file does not exist
+            return new FooterContactUs();
+        }
+
+        var json = File.ReadAllText(jsonFilePath);
+        var products = JsonConvert.DeserializeObject<FooterContactUs>(json);
+
+        return products ?? new FooterContactUs();
+    }
+
+    Task<bool> IContactService.SaveContactForm(ContactForm contactForm)
+    {
+        throw new NotImplementedException();
+    }
+
+    Task<bool> IContactService.UpdateContactInfoAsync(FooterContactUs updatedContactInfo)
+    {
+        // Serialize the updated products list to JSON
+        string json = JsonConvert.SerializeObject(updatedContactInfo);
+
+        // Specify the path to your JSON file
+        string jfilePath = "Json/contactus.json";
+
+        // Write the JSON data to the file
+        File.WriteAllTextAsync(jfilePath, json);
+
+        return Task.FromResult(true);
     }
 }
