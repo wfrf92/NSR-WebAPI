@@ -103,6 +103,7 @@ builder.Services.AddScoped<INewsService, NewsService>();
 builder.Services.AddScoped<IPromotionService, PromotionService>();
 builder.Services.AddScoped<IQuotationService, QuotationService>();
 builder.Services.AddScoped<ISliderService, SliderService>();
+builder.Services.AddScoped<IContactService, ContactUsService>();
 
 builder.Services.AddDirectoryBrowser();
 
