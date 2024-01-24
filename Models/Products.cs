@@ -17,7 +17,7 @@ public class Product
     public string MainFeature { get; set; }
 
     public Category Category { get; set; }
-    public Category Subcategory { get; set; }
+    public Subcategory Subcategory { get; set; }
 
     [JsonProperty("manufacturer")]
     public string Manufacturer { get; set; }

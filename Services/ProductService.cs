@@ -1,5 +1,6 @@
 using System.Net;
 using System.Net.Mail;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 public class ProductService : IProductService
@@ -44,16 +45,18 @@ public class ProductService : IProductService
     public async Task<Product> CreateProductAsync(Product product)
     {
         product.Id = products.Count + 1;
-        products.Add(product);
+        product.ProductId = product.Id;
+        product.Active = true;
 
+        products.Add(product);
         // Serialize the updated products list to JSON
         string json = JsonConvert.SerializeObject(products);
 
         // Specify the path to your JSON file
-        string filePath = "Json/products.json";
+        string jfilePath = "Json/products.json";
 
         // Write the JSON data to the file
-        await File.WriteAllTextAsync(filePath, json);
+        await File.WriteAllTextAsync(jfilePath, json);
 
         return await Task.FromResult(product);
     }

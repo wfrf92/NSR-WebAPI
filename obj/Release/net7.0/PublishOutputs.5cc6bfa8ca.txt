@@ -13,13 +13,17 @@
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/quotations.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/sliders.json
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Json/specification.json
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/15c393d4-2043-4834-896e-4ab3ed0422dc_2.jpeg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/28e1125b-eaab-485e-badf-6a7ed6ae7e1b_1.jpeg
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/about-us-bg.jpg
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Admin-Settings.png
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/atvs.png
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Battery Charger.jpg
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Battery.jpg
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/ccdd599a-e0c6-4d5d-9aad-641033290d22_Banner.png
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/CEO.png
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Customer-Support.png
+/Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/ecdd8869-c8b1-4e59-af96-025c9550286f_1.jpeg
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/Emergency Stop Switch.jpg
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/engine1.png
 /Users/francisfernando/NSR-WebAPI/bin/Release/net7.0/publish/Images/engines.png

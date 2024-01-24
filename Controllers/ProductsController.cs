@@ -32,19 +32,82 @@ public class ProductsController : ControllerBase
         return Ok(product);
     }
 
+    [HttpPost("upload")]
+    public async Task<IActionResult> UploadImages([FromForm] ImageUploadModel imageUploadModel)
+    {
+        try
+        {
+            // Instantiate the product variable
+            Product product = new Product();
+             string azureAppServiceUrl = Url.ActionContext.HttpContext.Request.Scheme + "://" + Url.ActionContext.HttpContext.Request.Host.Value;
+           
+            string webAppPath = AppDomain.CurrentDomain.BaseDirectory;
+            // Save the primary image
+            string primaryImageFileName =
+                $"{Guid.NewGuid().ToString()}_{imageUploadModel.PrimaryImage.FileName}";
+            string primaryImagePath = Path.Combine(webAppPath,"Images/", primaryImageFileName);
+
+            using (var primaryImageFileStream = new FileStream(primaryImagePath, FileMode.Create))
+            {
+                await imageUploadModel.PrimaryImage.CopyToAsync(primaryImageFileStream);
+            }
+
+            // Set the ImagePath property in the Product model for the main image
+            product.PrimaryImage = azureAppServiceUrl + "/Images/"+ primaryImageFileName;
+
+            // Save other images
+            List<string> otherImagePaths = new List<string>();
+
+            foreach (var otherImage in imageUploadModel.OtherImages)
+            {
+                // Save the primary image
+                string otherImageFileName = $"{Guid.NewGuid().ToString()}_{otherImage.FileName}";
+               
+                string otherImagePath = Path.Combine(webAppPath,"Images/", otherImageFileName);
+
+                using (var otherImageFileStream = new FileStream(otherImagePath, FileMode.Create))
+                {
+                    await otherImage.CopyToAsync(otherImageFileStream);
+                }
+
+                otherImagePaths.Add(azureAppServiceUrl + "/Images/"+ otherImageFileName);
+            }
+
+            // Set the OtherImages property in the Product model
+            product.OtherImages = otherImagePaths
+                .Select(path => new OtherImage { Image = path })
+                .ToList();
+
+            return Ok(product);
+        }
+        catch (Exception ex)
+        {
+            // Handle exceptions and return an appropriate response
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
+    }
+
     [Authorize]
     [HttpPost("createProduct")]
     public async Task<IActionResult> CreateProduct([FromBody] Product product)
     {
         var createdProduct = await _productService.CreateProductAsync(product);
-        return CreatedAtAction(nameof(CreateProduct), new { id = createdProduct.Id }, createdProduct);
+        return CreatedAtAction(
+            nameof(CreateProduct),
+            new { id = createdProduct.Id },
+            createdProduct
+        );
     }
 
     [HttpPost("createQuotation")]
     public async Task<IActionResult> CreateQuotation([FromBody] Quotation quotation)
     {
         var createdProduct = await _productService.CreateQuotationAsync(quotation);
-        return CreatedAtAction(nameof(CreateQuotation), new { id = createdProduct.Id }, createdProduct);
+        return CreatedAtAction(
+            nameof(CreateQuotation),
+            new { id = createdProduct.Id },
+            createdProduct
+        );
     }
 
     [Authorize]

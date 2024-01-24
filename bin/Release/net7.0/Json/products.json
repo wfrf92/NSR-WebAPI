@@ -9,12 +9,12 @@
       "category": {
         "id": 101,
         "name": "Engine",
-        "image_url": " https://example.com/electronics_image.jpg"
+        "image_url":"https://example.com/electronics_image.jpg"
       },
       "subcategory": {
         "id": 101,
         "name": "Electric Engine",
-        "image_url": " https://example.com/smartphones_image.jpg"
+        "image_url":"https://example.com/smartphones_image.jpg"
       },
       "manufacturer": "TechCo",
       "primary_image": "https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
@@ -63,15 +63,15 @@
       "category": {
         "id": 102,
         "name": "Speed Boats",
-        "image_url": " https://example.com/electronics_image.jpg"
+        "image_url":"https://example.com/electronics_image.jpg"
       },
       "subcategory": {
         "id": 102,
         "name": "Fishing Boats",
-        "image_url": " https://example.com/laptops_image.jpg"
+        "image_url":"https://example.com/laptops_image.jpg"
       },
       "manufacturer": "TechCo",
-      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
           "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
@@ -117,15 +117,15 @@
       "category": {
         "id": 2,
         "name": "ATVs",
-        "image_url": " https://example.com/clothing_image.jpg"
+        "image_url":"https://example.com/clothing_image.jpg"
       },
       "subcategory": {
         "id": 201,
         "name": "Electrical",
-        "image_url": " https://example.com/laptops_image.jpg"
+        "image_url":"https://example.com/laptops_image.jpg"
       },
       "manufacturer": "FashionCo",
-      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
           "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
@@ -171,15 +171,15 @@
       "category": {
         "id": 201,
         "name": "Engines",
-        "image_url": " https://example.com/clothing_image.jpg"
+        "image_url":"https://example.com/clothing_image.jpg"
       },
       "subcategory": {
         "id": 102,
         "name": "Electric Enginees",
-        "image_url": " https://example.com/laptops_image.jpg"
+        "image_url":"https://example.com/laptops_image.jpg"
       },
       "manufacturer": "FashionCo",
-      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
           "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
@@ -225,15 +225,15 @@
       "category": {
         "id": 2,
         "name": "ATVs",
-        "image_url": " https://example.com/clothing_image.jpg"
+        "image_url":"https://example.com/clothing_image.jpg"
       },
       "subcategory": {
         "id": 202,
         "name": "Non-Electrical",
-        "image_url": " https://example.com/laptops_image.jpg"
+        "image_url":"https://example.com/laptops_image.jpg"
       },
       "manufacturer": "FashionCo",
-      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
           "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
@@ -279,15 +279,15 @@
       "category": {
         "id": 3,
         "name": "Engines",
-        "image_url": " https://example.com/clothing_image.jpg"
+        "image_url":"https://example.com/clothing_image.jpg"
       },
       "subcategory": {
         "id": 301,
         "name": "Electric Enginees",
-        "image_url": " https://example.com/laptops_image.jpg"
+        "image_url":"https://example.com/laptops_image.jpg"
       },
       "manufacturer": "FashionCo",
-      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
           "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
@@ -333,15 +333,15 @@
       "category": {
         "id": 3,
         "name": "Engines",
-        "image_url": " https://example.com/clothing_image.jpg"
+        "image_url":"https://example.com/clothing_image.jpg"
       },
       "subcategory": {
         "id": 302,
         "name": "4-Strock-Outboard",
-        "image_url": " https://example.com/laptops_image.jpg"
+        "image_url":"https://example.com/laptops_image.jpg"
       },
       "manufacturer": "FashionCo",
-      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
           "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
@@ -387,15 +387,15 @@
       "category": {
         "id": 3,
         "name": "Engines",
-        "image_url": " https://example.com/clothing_image.jpg"
+        "image_url":"https://example.com/clothing_image.jpg"
       },
       "subcategory": {
         "id": 303,
         "name": "2-Strock-Outboard",
-        "image_url": " https://example.com/laptops_image.jpg"
+        "image_url":"https://example.com/laptops_image.jpg"
       },
       "manufacturer": "FashionCo",
-      "primary_image": " https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
       "other_images": [
         {
           "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",

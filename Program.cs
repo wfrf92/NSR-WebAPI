@@ -5,6 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Reflection;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.AspNetCore.Http.Features;
 
 var builder = WebApplication.CreateBuilder(args);
 var appSettings = new ConfigurationBuilder()
@@ -104,6 +105,12 @@ builder.Services.AddScoped<IQuotationService, QuotationService>();
 builder.Services.AddScoped<ISliderService, SliderService>();
 
 builder.Services.AddDirectoryBrowser();
+
+ builder.Services.Configure<FormOptions>(options =>
+    {
+        options.MultipartBodyLengthLimit = 50 * 1024 * 1024;  // Set it according to your requirement (e.g., 50 MB)
+    });
+
 
 var app = builder.Build();
 
