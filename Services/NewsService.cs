@@ -35,7 +35,19 @@ public class NewsService : INewsService
 
     public News GetNewsById(int id)
     {
-        return _newsList.Find(news => news.Id == id);
+        var news = _newsList.Find(news => news.Id == id);
+        if (news != null)
+        {
+            news.Active = false;
+        }
+        string jsonContent = JsonConvert.SerializeObject(_newsList, Formatting.Indented);
+
+          // Specify the path to your JSON file
+        string jfilePath = "Json/news.json";
+
+        File.WriteAllText(jfilePath, jsonContent);
+        
+        return news ?? new News();
     }
 
     public void AddNews(News newNews)
@@ -50,7 +62,7 @@ public class NewsService : INewsService
         string jfilePath = "Json/news.json";
 
         // Write the JSON data to the file
-         File.WriteAllTextAsync(jfilePath, json);
+        File.WriteAllTextAsync(jfilePath, json);
     }
 
     public void UpdateNews(News updatedNews)
