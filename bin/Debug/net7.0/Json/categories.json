@@ -1,0 +1,71 @@
+[
+    {
+      "id": 1,
+      "name": "Speed Boats",
+      "icon": "/assets/images/icon-yacht.png",
+      "imageUrl": "/assets/images/speed-boats.png",
+      "subcategories": [
+        {
+          "id": 101,
+          "name": "Fishing Boats",
+          "imageUrl": "https://example.com/smartphones_image.jpg",
+          "description":"Our electric outboard motors are renowned for their zero emissions and near-silent operation, providing a clean and quiet boating experience."
+        },
+        {
+          "id": 102,
+          "name": "Sports and Recreation Boats",
+          "imageUrl": "https://example.com/laptops_image.jpg",
+          "description":"Our electric outboard motors are renowned for their zero emissions and near-silent operation, providing a clean and quiet boating experience."
+        }
+      ],
+      "active":"true"
+    },
+    {
+      "id": 2,
+      "name": "ATVs",
+      "icon": "/assets/images/icon-atv.png",
+      "imageUrl": "/assets/images/atvs.png",
+      "subcategories": [
+        {
+          "id": 201,
+          "name": "Electrical",
+          "imageUrl": " https://example.com/mens_clothing_image.jpg",
+          "description":"Our electric outboard motors are renowned for their zero emissions and near-silent operation, providing a clean and quiet boating experience."
+        },
+        {
+          "id": 202,
+          "name": "Non-Electrical",
+          "imageUrl": "https://example.com/womens_clothing_image.jpg",
+          "description":"Our electric outboard motors are renowned for their zero emissions and near-silent operation, providing a clean and quiet boating experience."
+        }
+      ],
+      "active":"true"
+    },
+    {
+      "id": 3,
+      "name": "Engines",
+      "icon": "/assets/images/icon-engine.png",
+      "imageUrl": "/assets/images/engines.png",
+      "subcategories": [
+        {
+          "id": 301,
+          "name": "Electric Enginees",
+          "imageUrl": "https://example.com/furniture_image.jpg",
+          "description":"Our electric outboard motors are renowned for their zero emissions and near-silent operation, providing a clean and quiet boating experience."
+        },
+        {
+          "id": 302,
+          "name": "4-Strock-Outboard",
+          "imageUrl": "https://example.com/appliances_image.jpg",
+          "description":"Our electric outboard motors are renowned for their zero emissions and near-silent operation, providing a clean and quiet boating experience."
+        },
+        {
+          "id": 303,
+          "name": "2-Strock-Outboard",
+          "imageUrl": "https://example.com/cookware_image.jpg",
+          "description":"Our electric outboard motors are renowned for their zero emissions and near-silent operation, providing a clean and quiet boating experience."
+        }
+      ],
+      "active":"true"
+    }
+]

@@ -40,10 +40,27 @@ public class PromotionService : IPromotionService
 
     public void AddPromotion(Promotion newPromotion)
     {
-        newPromotion.Active = true;
-        newPromotion.Id = _promotions.Count + 1;
-        _promotions.Add(newPromotion);
+        if (newPromotion.Id == 0)
+        {
+            newPromotion.Active = true;
+            newPromotion.Id = _promotions.Count + 1;
+            _promotions.Add(newPromotion);
+        } 
+        else{
+            var promotion = _promotions.Find(x=>x.Id == newPromotion.Id);
+            if(promotion != null){
+              promotion.Title = newPromotion.Title;
+              promotion.Subtitle = newPromotion.Subtitle;
+              promotion.ImageUrl = newPromotion.ImageUrl;
+              promotion.Description = newPromotion.Description;
+              promotion.Condition = newPromotion.Condition;
+              promotion.Active = newPromotion.Active;
+              promotion.Discount = newPromotion.Discount;
+              promotion.LargeDescription = newPromotion.LargeDescription;
+            }
 
+        }
+        
         // Serialize the updated products list to JSON
         string json = JsonConvert.SerializeObject(_promotions);
 
@@ -51,7 +68,7 @@ public class PromotionService : IPromotionService
         string jfilePath = "Json/promotions.json";
 
         // Write the JSON data to the file
-         File.WriteAllTextAsync(jfilePath, json);
+        File.WriteAllTextAsync(jfilePath, json);
     }
 
     public void UpdatePromotion(Promotion updatedPromotion)

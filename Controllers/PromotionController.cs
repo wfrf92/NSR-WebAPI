@@ -19,13 +19,13 @@ public class PromotionController : ControllerBase
     [HttpGet]
     public IActionResult GetAllPromotions()
     {
-         // Check if the user is authenticated
+        // Check if the user is authenticated
         if (User.Identity.IsAuthenticated)
         {
             return Ok(_promotionService.GetAllPromotions());
         }
 
-        return Ok(_promotionService.GetAllPromotions().Where(x=>x.Active).ToList());
+        return Ok(_promotionService.GetAllPromotions().Where(x => x.Active).ToList());
     }
 
     [HttpGet("{id}")]
@@ -46,14 +46,10 @@ public class PromotionController : ControllerBase
     public IActionResult AddPromotion([FromBody] Promotion newPromotion)
     {
         _promotionService.AddPromotion(newPromotion);
-        return Ok(new { message = "Promotion added successfully" });
-    }
 
-    [Authorize]
-    [HttpPut]
-    public IActionResult UpdatePromotion([FromBody] Promotion updatedPromotion)
-    {
-        _promotionService.UpdatePromotion(updatedPromotion);
-        return Ok(new { message = "Promotion updated successfully" });
+        if (newPromotion.Id == 0)
+            return Ok(new { message = "Promotion added successfully" });
+        else
+            return Ok(new { message = "Promotion updated successfully" });
     }
 }

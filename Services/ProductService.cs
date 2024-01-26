@@ -44,11 +44,35 @@ public class ProductService : IProductService
 
     public async Task<Product> CreateProductAsync(Product product)
     {
-        product.Id = products.Count + 1;
-        product.ProductId = product.Id;
-        product.Active = true;
+        if (product.Id == 0)
+        {
+            product.Id = products.Count + 1;
+            product.ProductId = product.Id;
+            product.Active = true;
 
-        products.Add(product);
+            products.Add(product);
+        }
+        else
+        {
+            var _product = products.Find(x => x.Id == product.Id);
+            if (_product != null)
+            {
+                _product.Subdescription = product.Subdescription;
+                _product.MainFeature = product.MainFeature; 
+                _product.Category = product.Category;
+                _product.Subcategory = product.Subcategory;
+                _product.Manufacturer = product.Manufacturer;
+                _product.PrimaryImage = product.PrimaryImage;
+                _product.OtherImages = product.OtherImages;
+                _product.Specifications = product.Specifications;
+                _product.Features = product.Features;
+                _product.Other = product.Other;
+                _product.Promotions = product.Promotions;
+                _product.Condition = product.Condition;
+                _product.Active = product.Active;
+            }
+        }
+
         // Serialize the updated products list to JSON
         string json = JsonConvert.SerializeObject(products);
 
@@ -139,25 +163,5 @@ public class ProductService : IProductService
                 Console.WriteLine($"Error sending email: {ex.Message}");
             }
         }
-    }
-
-    public async Task UpdateProductAsync(Product updatedProduct)
-    {
-        var existingProduct = products.FirstOrDefault(p => p.Id == updatedProduct.Id);
-        if (existingProduct != null)
-        {
-            // Update properties based on your needs
-            existingProduct.Name = updatedProduct.Name;
-            // Update other properties
-        }
-
-        await Task.CompletedTask;
-    }
-
-    public async Task DeleteProductAsync(Product product)
-    {
-        products.Remove(product);
-
-        await Task.CompletedTask;
     }
 }

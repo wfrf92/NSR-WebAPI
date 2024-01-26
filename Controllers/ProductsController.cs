@@ -18,13 +18,13 @@ public class ProductsController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetProducts()
     {
-          // Check if the user is authenticated
+        // Check if the user is authenticated
         if (User.Identity.IsAuthenticated)
         {
             return Ok(await _productService.GetProductsAsync());
         }
 
-        return Ok(_productService.GetProductsAsync().Result.ToList().Where(x=>x.Active).ToList());
+        return Ok(_productService.GetProductsAsync().Result.ToList().Where(x => x.Active).ToList());
     }
 
     [HttpGet("{id}")]
@@ -37,7 +37,7 @@ public class ProductsController : ControllerBase
         return Ok(product);
     }
 
- [Authorize]
+    [Authorize]
     [HttpPost("upload")]
     public async Task<IActionResult> UploadImages([FromForm] ImageUploadModel imageUploadModel)
     {
@@ -45,13 +45,16 @@ public class ProductsController : ControllerBase
         {
             // Instantiate the product variable
             Product product = new Product();
-             string azureAppServiceUrl = Url.ActionContext.HttpContext.Request.Scheme + "://" + Url.ActionContext.HttpContext.Request.Host.Value;
-           
+            string azureAppServiceUrl =
+                Url.ActionContext.HttpContext.Request.Scheme
+                + "://"
+                + Url.ActionContext.HttpContext.Request.Host.Value;
+
             string webAppPath = AppDomain.CurrentDomain.BaseDirectory;
             // Save the primary image
             string primaryImageFileName =
                 $"{Guid.NewGuid().ToString()}_{imageUploadModel.PrimaryImage.FileName}";
-            string primaryImagePath = Path.Combine(webAppPath,"Images/", primaryImageFileName);
+            string primaryImagePath = Path.Combine(webAppPath, "Images/", primaryImageFileName);
 
             using (var primaryImageFileStream = new FileStream(primaryImagePath, FileMode.Create))
             {
@@ -59,7 +62,7 @@ public class ProductsController : ControllerBase
             }
 
             // Set the ImagePath property in the Product model for the main image
-            product.PrimaryImage = azureAppServiceUrl + "/Images/"+ primaryImageFileName;
+            product.PrimaryImage = azureAppServiceUrl + "/Images/" + primaryImageFileName;
 
             // Save other images
             List<string> otherImagePaths = new List<string>();
@@ -68,20 +71,20 @@ public class ProductsController : ControllerBase
             {
                 // Save the primary image
                 string otherImageFileName = $"{Guid.NewGuid().ToString()}_{otherImage.FileName}";
-               
-                string otherImagePath = Path.Combine(webAppPath,"Images/", otherImageFileName);
+
+                string otherImagePath = Path.Combine(webAppPath, "Images/", otherImageFileName);
 
                 using (var otherImageFileStream = new FileStream(otherImagePath, FileMode.Create))
                 {
                     await otherImage.CopyToAsync(otherImageFileStream);
                 }
 
-                otherImagePaths.Add(azureAppServiceUrl + "/Images/"+ otherImageFileName);
+                otherImagePaths.Add(azureAppServiceUrl + "/Images/" + otherImageFileName);
             }
 
             // Set the OtherImages property in the Product model
             product.OtherImages = otherImagePaths
-                .Select(path => new OtherImage { Image = path , ThumbImage = path})
+                .Select(path => new OtherImage { Image = path, ThumbImage = path })
                 .ToList();
 
             return Ok(product);
@@ -114,22 +117,5 @@ public class ProductsController : ControllerBase
             new { id = createdProduct.Id },
             createdProduct
         );
-    }
-
-    [Authorize]
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateProduct(int id, [FromBody] Product updatedProduct)
-    {
-        var product = await _productService.GetProductByIdAsync(id);
-        if (product == null)
-            return NotFound();
-
-        // Update properties based on your needs
-        product.Name = updatedProduct.Name;
-        // Update other properties
-
-        await _productService.UpdateProductAsync(product);
-
-        return NoContent();
     }
 }

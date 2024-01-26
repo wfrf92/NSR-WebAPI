@@ -42,19 +42,41 @@ public class NewsService : INewsService
         }
         string jsonContent = JsonConvert.SerializeObject(_newsList, Formatting.Indented);
 
-          // Specify the path to your JSON file
+        // Specify the path to your JSON file
         string jfilePath = "Json/news.json";
 
         File.WriteAllText(jfilePath, jsonContent);
-        
+
         return news ?? new News();
     }
 
     public void AddNews(News newNews)
     {
-        newNews.Active = true;
-        newNews.Id = _newsList.Count + 1;
-        _newsList.Add(newNews);
+        if (newNews.Id == 0)
+        {
+            newNews.Active = true;
+            newNews.Id = _newsList.Count + 1;
+            _newsList.Add(newNews);
+        }
+        else
+        {
+            var news = _newsList.Find(x => x.Id == newNews.Id);
+            if (news != null)
+            {
+                news.Title = newNews.Title;
+                news.Subtitle = newNews.Subtitle;
+                news.ImageUrl = newNews.ImageUrl;
+                news.Description = newNews.Description;
+                news.Description2 = newNews.Description2;
+                news.Active = newNews.Active;
+                news.Date = newNews.Date;
+                news.Author = newNews.Author;
+                news.ImageUrl = newNews.ImageUrl;
+                news.ImageUrl2 = newNews.ImageUrl;
+                news.ImgDescription = newNews.ImgDescription;
+                news.ImgTitle = newNews.ImgTitle;
+            }
+        }
         // Serialize the updated products list to JSON
         string json = JsonConvert.SerializeObject(_newsList);
 

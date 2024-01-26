@@ -3,8 +3,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 
-
-
 [ApiController]
 [Route("api/members")]
 public class MemberController : ControllerBase
@@ -36,27 +34,15 @@ public class MemberController : ControllerBase
         return NotFound(new { message = "Member not found" });
     }
 
-[Authorize]
+    [Authorize]
     [HttpPost]
     public IActionResult AddMember([FromBody] Member newMember)
     {
         _memberService.AddMember(newMember);
-        return Ok(new { message = "Member added successfully" });
-    }
 
-[Authorize]
-    [HttpPut]
-    public IActionResult UpdateMember([FromBody] Member updatedMember)
-    {
-        _memberService.UpdateMember(updatedMember);
-        return Ok(new { message = "Member updated successfully" });
-    }
-
-[Authorize]
-    [HttpDelete("{id}")]
-    public IActionResult DeleteMember(int id)
-    {
-        _memberService.DeleteMember(id);
-        return Ok(new { message = "Member deleted successfully" });
+        if (newMember.Id == 0)
+            return Ok(new { message = "Member added successfully" });
+        else
+            return Ok(new { message = "Member updated successfully" });
     }
 }

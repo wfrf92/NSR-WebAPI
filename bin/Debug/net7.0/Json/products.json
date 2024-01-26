@@ -1,0 +1,442 @@
+[
+    {
+      "id":1,
+      "product_id": 1,
+      "name": "Joy1.2 Electric Outboard Motor",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Digital LCD display :  Provide real-time information on the operating status of the outboard.",
+      "main_feature": "1440WH",
+      "category": {
+        "id": 101,
+        "name": "Engine",
+        "image_url":"https://example.com/electronics_image.jpg"
+      },
+      "subcategory": {
+        "id": 101,
+        "name": "Electric Engine",
+        "image_url":"https://example.com/smartphones_image.jpg"
+      },
+      "manufacturer": "TechCo",
+      "primary_image": "https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "title": "Main_Shaft"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "title": "Example with title."
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "sdf",
+      "promotions": 
+                      {
+                        "description":"sdf sxdcfvgbgfds sdfgb",
+                        "percentage":"10%",
+                        "validTillDate": "2024/03/30"
+                      }
+                    ,
+      "condition":"New",
+      "discount":"10% off and valid till 20th February 2024",
+      "active": "true"
+    },
+    {
+      "id":2,
+      "product_id": 2,
+      "name": "Yacht 123",
+      "description": "A powerful and lightweight laptop for productivity.",
+      "subdescription": "Electric start :  Press the power button down, and then you're ready to go. Eliminate the need for manual wire pulling.",
+      "main_feature": "Luxury",
+      "category": {
+        "id": 102,
+        "name": "Speed Boats",
+        "image_url":"https://example.com/electronics_image.jpg"
+      },
+      "subcategory": {
+        "id": 102,
+        "name": "Fishing Boats",
+        "image_url":"https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "TechCo",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "title": "Main_Shaft"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "title": "Example with title."
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "sdf",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"Used",
+      "discount": "10% off and valid till 20th February 2024",
+      "active": "true"
+    },
+    {
+      "id":3,
+      "product_id": 3,
+      "name": "ATV 352",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Magnetic emergency switch :  Allow for quick shutdown in emergency situations for added safety.",
+      "main_feature": "150WH",
+      "category": {
+        "id": 2,
+        "name": "ATVs",
+        "image_url":"https://example.com/clothing_image.jpg"
+      },
+      "subcategory": {
+        "id": 201,
+        "name": "Electrical",
+        "image_url":"https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "FashionCo",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "title": "Main_Shaft"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "title": "Example with title."
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "asdfg",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"New",
+      "discount": "12% off and valid till 20th February 2024",
+      "active": "false"
+    },
+    {
+      "id":4,
+      "product_id": 4,
+      "name": "Electric Engine 882",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Stepless throttle replacement :  For a clear, smooth, and pleasant operation.",
+      "main_feature": "150WH",
+      "category": {
+        "id": 201,
+        "name": "Engines",
+        "image_url":"https://example.com/clothing_image.jpg"
+      },
+      "subcategory": {
+        "id": 102,
+        "name": "Electric Enginees",
+        "image_url":"https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "FashionCo",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "title": "Main_Shaft"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "title": "Example with title."
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "asdfg",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"New",
+      "discount": "19% off and valid till 20th February 2024",
+      "active": "false"
+    },
+    {
+      "id":5,
+      "product_id": 5,
+      "name": "ATV 352",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Magnetic emergency switch :  Allow for quick shutdown in emergency situations for added safety.",
+      "main_feature": "150WH",
+      "category": {
+        "id": 2,
+        "name": "ATVs",
+        "image_url":"https://example.com/clothing_image.jpg"
+      },
+      "subcategory": {
+        "id": 202,
+        "name": "Non-Electrical",
+        "image_url":"https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "FashionCo",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "title": "Main_Shaft"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "title": "Example with title."
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "asdfg",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"New",
+      "discount": "13% off and valid till 20th February 2024",
+      "active": "false"
+    },
+    {
+      "id":6,
+      "product_id": 6,
+      "name": "Engine 321",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Digital LCD display :  Provide real-time information on the operating status of the outboard.",
+      "main_feature": "150WH",
+      "category": {
+        "id": 3,
+        "name": "Engines",
+        "image_url":"https://example.com/clothing_image.jpg"
+      },
+      "subcategory": {
+        "id": 301,
+        "name": "Electric Enginees",
+        "image_url":"https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "FashionCo",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "title": "Main_Shaft"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "title": "Example with title."
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "asdfg",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"New",
+      "discount": "11% off and valid till 20th February 2024",
+      "active": "false"
+    },
+    {
+      "id":7,
+      "product_id": 7,
+      "name": "Engine 521",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Electric start :  Press the power button down, and then you're ready to go. Eliminate the need for manual wire pulling.",
+      "main_feature": "150WH",
+      "category": {
+        "id": 3,
+        "name": "Engines",
+        "image_url":"https://example.com/clothing_image.jpg"
+      },
+      "subcategory": {
+        "id": 302,
+        "name": "4-Strock-Outboard",
+        "image_url":"https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "FashionCo",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "title": "Main_Shaft"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "title": "Example with title."
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "asdfg",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"Used",
+      "discount": "16% off and valid till 20th February 2024",
+      "active": "false"
+    },
+    {
+      "id":8,
+      "product_id": 8,
+      "name": "Engine 521",
+      "description": "A portable 3HP electric outboard motor made for dinghies, fishing boats, and sailboats.",
+      "subdescription": "Digital LCD display :  Provide real-time information on the operating status of the outboard.",
+      "main_feature": "150WH",
+      "category": {
+        "id": 3,
+        "name": "Engines",
+        "image_url":"https://example.com/clothing_image.jpg"
+      },
+      "subcategory": {
+        "id": 303,
+        "name": "2-Strock-Outboard",
+        "image_url":"https://example.com/laptops_image.jpg"
+      },
+      "manufacturer": "FashionCo",
+      "primary_image":"https://nsr-boats-api.azurewebsites.net/Images/Joy1.2 Electric Outboard Motor.png",
+      "other_images": [
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Main_Shaft.jpg",
+          "title": "Main_Shaft"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery.jpg",
+          "title": "Example with title."
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Emergency Stop Switch.jpg",
+          "title": "Emergency Stop Switch"
+        },
+        {
+          "image": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "thumbImage": "https://nsr-boats-api.azurewebsites.net/Images/Battery Charger.jpg",
+          "title": "Battery Charger"
+        }
+      ],
+      "specifications": "richtext",
+      "features": "*",
+      "other": "asdfg",
+      "promotions": 
+        {
+          "description":"sdf sxdcfvgbgfds sdfgb",
+          "percentage":"10%",
+          "validTillDate": "2024/03/30"
+        }
+      ,
+      "condition":"New",
+      "discount": "14% off and valid till 20th February 2024",
+      "active": "false"
+    }
+  ]

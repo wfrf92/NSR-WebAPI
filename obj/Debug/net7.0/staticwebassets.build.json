@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "l9XoVlIPAcp3jjbU/RToNoxSbwuE3XFiWmvAeTBOqe0=",
+  "Source": "NSR_WebAPI",
+  "BasePath": "_content/NSR_WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

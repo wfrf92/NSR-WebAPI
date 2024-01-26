@@ -4,8 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 
 using Microsoft.AspNetCore.Authorization;
 
-
-
 [ApiController]
 [Route("api/sliders")]
 public class SliderController : ControllerBase
@@ -20,13 +18,13 @@ public class SliderController : ControllerBase
     [HttpGet]
     public IActionResult GetAllSliders()
     {
-         // Check if the user is authenticated
+        // Check if the user is authenticated
         if (User.Identity.IsAuthenticated)
         {
             return Ok(_sliderService.GetAllSliders());
         }
 
-        return Ok(_sliderService.GetAllSliders().Where(x=>x.Active).ToList());
+        return Ok(_sliderService.GetAllSliders().Where(x => x.Active).ToList());
     }
 
     [HttpGet("{id}")]
@@ -42,19 +40,15 @@ public class SliderController : ControllerBase
         return NotFound(new { message = "Slider not found" });
     }
 
-[Authorize]
+    [Authorize]
     [HttpPost]
     public IActionResult AddSlider([FromBody] Slider newSlider)
     {
         _sliderService.AddSlider(newSlider);
-        return Ok(new { message = "Slider added successfully" });
-    }
 
-[Authorize]
-    [HttpPut]
-    public IActionResult UpdateSlider([FromBody] Slider updatedSlider)
-    {
-        _sliderService.UpdateSlider(updatedSlider);
-        return Ok(new { message = "Slider updated successfully" });
+        if (newSlider.Id == 0)
+            return Ok(new { message = "Slider added successfully" });
+        else
+            return Ok(new { message = "Slider updated successfully" });
     }
 }

@@ -44,14 +44,11 @@ public class NewsController : ControllerBase
     public IActionResult AddNews([FromBody] News newNews)
     {
         _newsService.AddNews(newNews);
-        return Ok(new { message = "News added successfully" });
+
+        if (newNews.Id == 0)
+            return Ok(new { message = "News added successfully" });
+        else
+            return Ok(new { message = "News updated successfully" });
     }
 
-    [Authorize]
-    [HttpPut]
-    public IActionResult UpdateNews([FromBody] News updatedNews)
-    {
-        _newsService.UpdateNews(updatedNews);
-        return Ok(new { message = "News updated successfully" });
-    }
 }

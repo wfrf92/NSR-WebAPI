@@ -40,9 +40,22 @@ public class SliderService : ISliderService
 
     public void AddSlider(Slider newSlider)
     {
+        if (newSlider.Id == 0)
+        {
         newSlider.Active = true;
         newSlider.Id = _sliders.Count + 1;
         _sliders.Add(newSlider);
+        }
+        else{
+             var _slider = _sliders.Find(x => x.Id == newSlider.Id);
+            if (_slider != null)
+            {
+                _slider.Subtitle = newSlider.Subtitle;
+                _slider.Url = newSlider.Url;
+                _slider.Active = newSlider.Active;
+                _slider.Title = newSlider.Title;
+            }
+        }
 
           // Serialize the updated products list to JSON
         string json = JsonConvert.SerializeObject(_sliders);
