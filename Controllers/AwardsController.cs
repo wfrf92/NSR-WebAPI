@@ -20,8 +20,13 @@ public class AwardsController : ControllerBase
     [HttpGet]
     public ActionResult<IEnumerable<Award>> Get()
     {
-        var awards = _awardService.GetAllAwards();
-        return Ok(awards);
+        // Check if the user is authenticated
+        if (User.Identity.IsAuthenticated)
+        {
+            return Ok( _awardService.GetAllAwards());
+        }
+
+        return Ok( _awardService.GetAllAwards().Where(x=>x.Active).ToList());
     }
 
     [HttpGet("{id}")]
@@ -50,14 +55,6 @@ public class AwardsController : ControllerBase
     public IActionResult Put(int id, [FromBody] Award updatedAward)
     {
         _awardService.UpdateAward(id, updatedAward);
-        return NoContent();
-    }
-
-    [Authorize]
-    [HttpDelete("{id}")]
-    public IActionResult Delete(int id)
-    {
-        _awardService.DeleteAward(id);
         return NoContent();
     }
 }

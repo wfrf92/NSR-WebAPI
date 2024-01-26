@@ -1,4 +1,5 @@
 // ContactController.cs
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -22,6 +23,7 @@ public class ContactController : ControllerBase
     }
 
     [HttpPost("updateContactInfoAsync")]
+     [Authorize]
     public Task<bool> UpdateContactInfoAsync(FooterContactUs updatedContactInfo)
     {
         try

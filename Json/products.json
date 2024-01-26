@@ -51,6 +51,7 @@
                       }
                     ,
       "condition":"New",
+      "discount":"10% off and valid till 20th February 2024",
       "active": "true"
     },
     {
@@ -105,6 +106,7 @@
         }
       ,
       "condition":"Used",
+      "discount": "10% off and valid till 20th February 2024",
       "active": "true"
     },
     {
@@ -159,6 +161,7 @@
         }
       ,
       "condition":"New",
+      "discount": "12% off and valid till 20th February 2024",
       "active": "false"
     },
     {
@@ -213,6 +216,7 @@
         }
       ,
       "condition":"New",
+      "discount": "19% off and valid till 20th February 2024",
       "active": "false"
     },
     {
@@ -267,6 +271,7 @@
         }
       ,
       "condition":"New",
+      "discount": "13% off and valid till 20th February 2024",
       "active": "false"
     },
     {
@@ -321,6 +326,7 @@
         }
       ,
       "condition":"New",
+      "discount": "11% off and valid till 20th February 2024",
       "active": "false"
     },
     {
@@ -375,6 +381,7 @@
         }
       ,
       "condition":"Used",
+      "discount": "16% off and valid till 20th February 2024",
       "active": "false"
     },
     {
@@ -429,6 +436,7 @@
         }
       ,
       "condition":"New",
+      "discount": "14% off and valid till 20th February 2024",
       "active": "false"
     }
   ]

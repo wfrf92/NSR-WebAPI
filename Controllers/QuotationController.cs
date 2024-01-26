@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 
 [ApiController]
 [Route("api/quotations")]
+[Authorize]
 public class QuotationController : ControllerBase
 {
     private readonly IQuotationService _quotationService;
@@ -50,13 +51,5 @@ public class QuotationController : ControllerBase
     {
         _quotationService.UpdateQuotation(updatedQuotation);
         return Ok(new { message = "Quotation updated successfully" });
-    }
-
-    [Authorize]
-    [HttpDelete("{id}")]
-    public IActionResult DeleteQuotation(int id)
-    {
-        _quotationService.DeleteQuotation(id);
-        return Ok(new { message = "Quotation deleted successfully" });
     }
 }

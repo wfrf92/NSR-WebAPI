@@ -18,8 +18,13 @@ public class ProductsController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetProducts()
     {
-        var products = await _productService.GetProductsAsync();
-        return Ok(products);
+          // Check if the user is authenticated
+        if (User.Identity.IsAuthenticated)
+        {
+            return Ok(await _productService.GetProductsAsync());
+        }
+
+        return Ok(_productService.GetProductsAsync().Result.ToList().Where(x=>x.Active).ToList());
     }
 
     [HttpGet("{id}")]
@@ -32,6 +37,7 @@ public class ProductsController : ControllerBase
         return Ok(product);
     }
 
+ [Authorize]
     [HttpPost("upload")]
     public async Task<IActionResult> UploadImages([FromForm] ImageUploadModel imageUploadModel)
     {
@@ -123,19 +129,6 @@ public class ProductsController : ControllerBase
         // Update other properties
 
         await _productService.UpdateProductAsync(product);
-
-        return NoContent();
-    }
-
-    [Authorize]
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteProduct(int id)
-    {
-        var product = await _productService.GetProductByIdAsync(id);
-        if (product == null)
-            return NotFound();
-
-        await _productService.DeleteProductAsync(product);
 
         return NoContent();
     }

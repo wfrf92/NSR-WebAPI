@@ -3,8 +3,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 
-
-
 [ApiController]
 [Route("api/news")]
 public class NewsController : ControllerBase
@@ -19,8 +17,13 @@ public class NewsController : ControllerBase
     [HttpGet]
     public IActionResult GetAllNews()
     {
-        var newsList = _newsService.GetAllNews();
-        return Ok(newsList);
+        // Check if the user is authenticated
+        if (User.Identity.IsAuthenticated)
+        {
+            return Ok(_newsService.GetAllNews());
+        }
+
+        return Ok(_newsService.GetAllNews().Where(x=>x.Active).ToList());
     }
 
     [HttpGet("{id}")]
@@ -36,7 +39,7 @@ public class NewsController : ControllerBase
         return NotFound(new { message = "News not found" });
     }
 
-[Authorize]
+    [Authorize]
     [HttpPost]
     public IActionResult AddNews([FromBody] News newNews)
     {
@@ -44,19 +47,11 @@ public class NewsController : ControllerBase
         return Ok(new { message = "News added successfully" });
     }
 
-[Authorize]
+    [Authorize]
     [HttpPut]
     public IActionResult UpdateNews([FromBody] News updatedNews)
     {
         _newsService.UpdateNews(updatedNews);
         return Ok(new { message = "News updated successfully" });
-    }
-
-[Authorize]
-    [HttpDelete("{id}")]
-    public IActionResult DeleteNews(int id)
-    {
-        _newsService.DeleteNews(id);
-        return Ok(new { message = "News deleted successfully" });
     }
 }

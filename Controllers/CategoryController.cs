@@ -51,12 +51,4 @@ public class CategoryController : ControllerBase
         _categoryService.UpdateCategory(updatedCategory);
         return Ok(new { message = "Category updated successfully" });
     }
-
-[Authorize]
-    [HttpDelete("{id}")]
-    public IActionResult DeleteCategory(int id)
-    {
-        _categoryService.DeleteCategory(id);
-        return Ok(new { message = "Category deleted successfully" });
-    }
 }

@@ -20,8 +20,13 @@ public class SliderController : ControllerBase
     [HttpGet]
     public IActionResult GetAllSliders()
     {
-        var sliders = _sliderService.GetAllSliders();
-        return Ok(sliders);
+         // Check if the user is authenticated
+        if (User.Identity.IsAuthenticated)
+        {
+            return Ok(_sliderService.GetAllSliders());
+        }
+
+        return Ok(_sliderService.GetAllSliders().Where(x=>x.Active).ToList());
     }
 
     [HttpGet("{id}")]
@@ -51,13 +56,5 @@ public class SliderController : ControllerBase
     {
         _sliderService.UpdateSlider(updatedSlider);
         return Ok(new { message = "Slider updated successfully" });
-    }
-
-[Authorize]
-    [HttpDelete("{id}")]
-    public IActionResult DeleteSlider(int id)
-    {
-        _sliderService.DeleteSlider(id);
-        return Ok(new { message = "Slider deleted successfully" });
     }
 }

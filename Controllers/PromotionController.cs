@@ -19,8 +19,13 @@ public class PromotionController : ControllerBase
     [HttpGet]
     public IActionResult GetAllPromotions()
     {
-        var promotions = _promotionService.GetAllPromotions();
-        return Ok(promotions);
+         // Check if the user is authenticated
+        if (User.Identity.IsAuthenticated)
+        {
+            return Ok(_promotionService.GetAllPromotions());
+        }
+
+        return Ok(_promotionService.GetAllPromotions().Where(x=>x.Active).ToList());
     }
 
     [HttpGet("{id}")]
@@ -50,13 +55,5 @@ public class PromotionController : ControllerBase
     {
         _promotionService.UpdatePromotion(updatedPromotion);
         return Ok(new { message = "Promotion updated successfully" });
-    }
-
-    [Authorize]
-    [HttpDelete("{id}")]
-    public IActionResult DeletePromotion(int id)
-    {
-        _promotionService.DeletePromotion(id);
-        return Ok(new { message = "Promotion deleted successfully" });
     }
 }
