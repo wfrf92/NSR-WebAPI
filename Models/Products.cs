@@ -6,8 +6,7 @@ public class Product
 
     [JsonProperty("product_id")]
     public int ProductId { get; set; }
-  public string Type { get; set; }
-   public string Discount { get; set; }
+    public string Discount { get; set; }
     public string Name { get; set; }
     public string Description { get; set; }
 
