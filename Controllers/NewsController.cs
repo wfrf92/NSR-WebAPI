@@ -23,7 +23,7 @@ public class NewsController : ControllerBase
             return Ok(_newsService.GetAllNews());
         }
 
-        return Ok(_newsService.GetAllNews().Where(x=>x.Active).ToList());
+        return Ok(_newsService.GetAllNews().Where(x => x.Active).ToList());
     }
 
     [HttpGet("{id}")]
@@ -39,6 +39,24 @@ public class NewsController : ControllerBase
         return NotFound(new { message = "News not found" });
     }
 
+    [HttpGet("{id}/{active}")]
+    public IActionResult UpdateNewsById(int id, bool active)
+    {
+        var news = _newsService.GetNewsById(id);
+
+        if (news != null)
+        {
+            news.Active = active;
+            _newsService.UpdateNews(news);
+
+            return Ok(news);
+        }
+
+        return NotFound(
+            new { message = $"News with ID {id} {(active ? "is active" : "is not active")}" }
+        );
+    }
+
     [Authorize]
     [HttpPost]
     public IActionResult AddNews([FromBody] News newNews)
@@ -50,5 +68,4 @@ public class NewsController : ControllerBase
         else
             return Ok(new { message = "News updated successfully" });
     }
-
 }
